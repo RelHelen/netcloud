@@ -5,7 +5,7 @@
  */
 namespace app\controllers;
 //пользователь сможет вызавать методы и видеть их встроке, если есть дописка Action
-class PostNew{
+class PostNew extends App{
     public function indexAction(){
         echo 'PostNew::index';
     }

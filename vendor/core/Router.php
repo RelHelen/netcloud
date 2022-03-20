@@ -21,6 +21,7 @@ class Router {
     *  @var array
     *  $route['controller']
     *  $route['action']-он же хранит метод, а также подключаемый файл вида(views)
+    *  $route['alias'] - параметры к методу(page/view/about)
     */
     protected static $route=[];
 
@@ -93,7 +94,8 @@ class Router {
                 //debug($contrObj);
                 //если метод  $action сущекствует у объекта $contrObj, то запустим его
                 if (method_exists($contrObj, $action)) {
-                    $contrObj->$action();                    
+                    $contrObj->$action();
+                    $contrObj->getView();                    
                 } else{
                     echo "<p>метод $controller::$action не найден</p>";
                 }        
@@ -131,8 +133,10 @@ class Router {
         return lcfirst(self::upperCamelCase($name));    
         
     }
-    /** Обрезает возможные get парметры
-     *  @param string $url - входящий url
+
+
+    /** Обрезает возможные get парметры  
+     * @param string $url - входящий url
      * */
     protected static function removeQueryString($url){
         if($url){

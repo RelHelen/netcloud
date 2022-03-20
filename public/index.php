@@ -4,12 +4,12 @@ error_reporting(-1); //вывод ошибок для теста
 use vendor\core\Router;
 $query=rtrim($_SERVER['QUERY_STRING'], '/');//обрезаем спава / в конце
 //$query=($_SERVER['QUERY_STRING']);
-echo 'Путь к файлу[controller/action]: '. $query;
+echo 'Путь к файлу[controller/action]: '. $query."<br>";
 
 //require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
- echo "<p>Запрос GET:</p>";
- debug($_GET);
+ //echo "<p>Запрос GET:</p>";
+ //debug($_GET);
 /**Функция автозагруки классов
  * загрузка классов из APP/controllers * 
  */
@@ -17,6 +17,7 @@ define('WWW',__DIR__);//ТЕКУЩАЯ ПАПКА public
 define('CORE',dirname(__DIR__).'/vendor/core');
 define('ROOT',dirname(__DIR__));//это корень 
 define('APP',dirname(__DIR__).'/app');//заходит в папку APP
+define('LAYOUT','default');//шаблон по умолчаню
 spl_autoload_register(function($class){
  //   debug($class);
  $file = ROOT.'/'.str_replace('\\','/',$class).'.php';//определяем место класса Router  замена обратного слеша \на прямой / 
@@ -47,6 +48,7 @@ Router::add('^pages/?(?P<action>[a-z-]+)?$',['controller'=>'Main','action'=>'ind
  */
 Router::add('^page/(?P<action>[a-z-]+)/(?P<alias>[a-z-]+)$',['controller'=>'Page']);
 Router::add('^page/(?P<alias>[a-z-]+)$',['controller'=>'Page','action'=>'view']);
+Router::add('^page$',['controller'=>'Page','action'=>'view']);
 /**
  * правило для пустой строки
  */
