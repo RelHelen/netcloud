@@ -46,12 +46,15 @@ Router::add('^pages/?(?P<action>[a-z-]+)?$',['controller'=>'Main','action'=>'ind
  */
 Router::add('^$',['controller'=>'Main','action'=>'index']);//по умолчанию пустая срока
 Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
-/** ?(?P<action>[a-z-]+)? -не обязателен */
+ /** ?(?P<action>[a-z-]+)? -не обязателен */
 
-//выа=вод всех строк
-debug(Router::getRoutes());
+/**выа=вод всех строк
+ */
+//debug(Router::getRoutes());
 // res: Array ( [post/add] => Array ( [controller] => Posts [action] => add ) )
 
-//проверяем, если адрес строки совпадает с имеющимся правилом маршрутов, то его печатаем
+/**проверяем, если адрес строки совпадает с имеющимся правилом маршрутов, то его печатаем
+ * 
+ * */
 Router::dispatch($query);
 
