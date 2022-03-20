@@ -15,8 +15,12 @@ class Router {
     protected static $routes=[];
 
     /**массив: текущий маршрут
-    * один текущий маршрут по текущему url адресуic 
+    * один текущий маршрут по текущему url адресу
+    * он определяет какой конторллер будет загружен,
+    *               какой вид контроллера будет загружен     
     *  @var array
+    *  $route['controller']
+    *  $route['action']-он же хранит метод, а также подключаемый файл вида(views)
     */
     protected static $route=[];
 
@@ -43,7 +47,7 @@ class Router {
         return self::$route;
     }
 
-    /**метод: поиск пути
+    /**метод: ищет URL в таблице маршрутов
      * поиск url на совпадение из массива маршрутов
      * @param string $url - входящий url
      * @return boolean
@@ -52,14 +56,18 @@ class Router {
         foreach(self::$routes as $pattern => $route){
             if (preg_match("#$pattern#i",$url,$matches)){            
                 //debug($matches);
+                //$route- хранит контроллер и метод
                 foreach($matches as $key=>$val){
                     if(is_string($key)){
                         $route[$key]=$val;
                     }
                 }
-                if(!isset($route['action'])){$route['action']='index';};
+                if(!isset($route['action'])){
+                    $route['action']='index';
+                };
+                $route['controller']=self::upperCamelCase($route['controller']);
                 self::$route=$route; //текущий маршрут буде равен $route [controller] => Posts [action] => add )
-                debug($route);
+                //debug($route); //хранит контроллер и метод
                 return true;//адрес  найден 
             }          
         }
@@ -71,13 +79,16 @@ class Router {
      * return  void - ничего не возвращате
      * */
     public static function dispatch($url){
+        $url=self::removeQueryString($url);
+       //var_dump($url);
         if(self::matchRoute($url)){
             //в  $controller помещаем реззульат контроллера
             //$controller=self::$route['controller'];
-            $controller=self::upperCamelCase(self::$route['controller']);
-            $controller='app\controllers\\'. $controller;          
+            $controller=self::$route['controller'];
+            $controller='app\controllers\\'. $controller;   
+             //debug(self::$route);       
             if(class_exists($controller)){                
-                $contrObj=new $controller;                
+                $contrObj=new $controller(self::$route);                
                 $action = self::lowerCamelCase(self::$route['action']).'Action';
                 //debug($contrObj);
                 //если метод  $action сущекствует у объекта $contrObj, то запустим его
@@ -120,5 +131,31 @@ class Router {
         return lcfirst(self::upperCamelCase($name));    
         
     }
+    /** Обрезает возможные get парметры
+     *  @param string $url - входящий url
+     * */
+    protected static function removeQueryString($url){
+        if($url){
+            $pararams=explode('&',$url,2);//создали массив из двух элементов, разделенных $
+            /**
+             * 
+            $url =  http://localhost/netcloud/post-new/test/?f=1&a=3
+            pararams будет равен 
+            
+                // [0] => post-new/test/ (нет знака =)
+                // [1] => f=1&a=3 (есть знак =)
+                
+            
+            */
+
+            //если в $pararams[0] нет "=", то его вернем,значит там нет гетзапроса
+            if (false===strpos($pararams[0],'=')){
+                return rtrim($pararams[0],'/');
+            }else{
+               return '' ;
+            }           
+        }        
+        return $url;
+    } 
 
 }

@@ -4,11 +4,16 @@
  * 
  */
 namespace app\controllers;
-class Post{
+class Post extends \vendor\core\base\Controller{
+   
+
     public function indexAction(){
-        echo 'Post::index';
+        debug($this->route);
+        echo '<p>Post::index</p>';
     }
+
     public function testAction(){
-        echo 'Post::test';
+        debug($this->route);
+        echo "<p>Post::test</p>";
     }
 }

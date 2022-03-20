@@ -8,7 +8,8 @@ echo 'Путь к файлу[controller/action]: '. $query;
 
 //require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
-
+ echo "<p>Запрос GET:</p>";
+ debug($_GET);
 /**Функция автозагруки классов
  * загрузка классов из APP/controllers * 
  */
@@ -42,9 +43,17 @@ spl_autoload_register(function($class){
  */
 Router::add('^pages/?(?P<action>[a-z-]+)?$',['controller'=>'Main','action'=>'index']);
 /**
- * дефолтное правило
+ * просмотр для контроллера:Page дефолтного вида
  */
-Router::add('^$',['controller'=>'Main','action'=>'index']);//по умолчанию пустая срока
+Router::add('^page/(?P<action>[a-z-]+)/(?P<alias>[a-z-]+)$',['controller'=>'Page']);
+Router::add('^page/(?P<alias>[a-z-]+)$',['controller'=>'Page','action'=>'view']);
+/**
+ * правило для пустой строки
+ */
+Router::add('^$',['controller'=>'Main','action'=>'index']);
+/**
+ * правило для всех контроллеров и методов(видов)
+ */
 Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
  /** ?(?P<action>[a-z-]+)? -не обязателен */
 
