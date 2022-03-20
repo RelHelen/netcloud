@@ -1,8 +1,8 @@
 <?php
 /**
- * Router
+ * Router, подключает controllers
  */
-/**Зададим пространство имен
+/**Зададим пространство имен namespace
  * это путь к классу начиная от корня нашего приложения
  * 
  */
@@ -74,7 +74,8 @@ class Router {
         if(self::matchRoute($url)){
             //в  $controller помещаем реззульат контроллера
             //$controller=self::$route['controller'];
-            $controller=self::upperCamelCase(self::$route['controller']);          
+            $controller=self::upperCamelCase(self::$route['controller']);
+            $controller='app\controllers\\'. $controller;          
             if(class_exists($controller)){                
                 $contrObj=new $controller;                
                 $action = self::lowerCamelCase(self::$route['action']).'Action';

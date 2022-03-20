@@ -1,4 +1,9 @@
 <?php
+/**Зададим пространство имен namespace
+ * это путь к классу начиная от корня нашего приложения
+ * 
+ */
+namespace app\controllers;
 //пользователь сможет вызавать методы и видеть их встроке, если есть дописка Action
 class PostNew{
     public function indexAction(){

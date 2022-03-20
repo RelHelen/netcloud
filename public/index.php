@@ -1,7 +1,10 @@
 <?php 
+error_reporting(-1); //вывод ошибок для теста
+//подключаем Router
+use vendor\core\Router;
 $query=rtrim($_SERVER['QUERY_STRING'], '/');//обрезаем спава / в конце
 //$query=($_SERVER['QUERY_STRING']);
-echo $query;
+echo 'Путь к файлу[controller/action]: '. $query;
 
 //require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
@@ -11,11 +14,13 @@ require '../vendor/libs/functions.php';
  */
 define('WWW',__DIR__);//ТЕКУЩАЯ ПАПКА public
 define('CORE',dirname(__DIR__).'/vendor/core');
-define('ROOT',dirname(__DIR__));//APP
+define('ROOT',dirname(__DIR__));//это корень 
 define('APP',dirname(__DIR__).'/app');//заходит в папку APP
 spl_autoload_register(function($class){
- debug($class);
-    $file = APP."/controllers/$class.php";//загрузка из папки APP
+ //   debug($class);
+ $file = ROOT.'/'.str_replace('\\','/',$class).'.php';//определяем место класса Router  замена обратного слеша \на прямой / 
+ //debug($file);
+    //$file = APP."/controllers/$class.php";//загрузка из папки APP
     if (is_file($file)){
         require_once $file;
     }
@@ -31,10 +36,7 @@ spl_autoload_register(function($class){
     //вызываем котролер 'controller'=>'Posts'
     // и метод  'action'=>'add'
  //Router::add('',['controller'=>'Main','action'=>'index']);
-//Router::add('post/add',['controller'=>'Posts','action'=>'add']);
-// Router::add('contracts/index',['controller'=>'Contracts','action'=>'index']);
-// Router::add('operation',['controller'=>'Operation','action'=>'index']);
-// Router::add('personal',['controller'=>'Personal','action'=>'index']);
+
 /**
  * при обращении к несуществующему контролеру и методу  (pages) переходим на main/index
  */
@@ -49,10 +51,7 @@ Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
 //выа=вод всех строк
 debug(Router::getRoutes());
 // res: Array ( [post/add] => Array ( [controller] => Posts [action] => add ) )
-Router::dispatch($query);
+
 //проверяем, если адрес строки совпадает с имеющимся правилом маршрутов, то его печатаем
-// if(Router::matchRoute($query)){
-//     debug(Router::getRoute());
-// }else{
-//     echo '404';
-// }
+Router::dispatch($query);
+
