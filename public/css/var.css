@@ -1,0 +1,11 @@
+/*white*/
+/*black*/
+/*green*/
+/*blue*/
+/*red*/
+.gradient {
+  background-image: radial-gradient(ellipse at center, rgba(60, 60, 62, 0.1) 20%, rgba(60, 60, 62, 0.2) 40%, rgba(31, 31, 32, 0.8) 100%);
+}
+.border-bottom {
+  border-bottom: 1px solid rgba(79, 76, 76, 0.8);
+}

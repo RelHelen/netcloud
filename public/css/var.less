@@ -1,0 +1,77 @@
+// main: styles.less;
+@fontColor: #eee; /*white*/
+@color: #000;	/*black*/
+@colorAccent: #3CFFFF; /*green*/
+@colorSecond: #26ADFF;  /*blue*/
+@colorDanger: #FC3F4A; /*red*/
+@lightGrey: #8f9496;
+@grey: rgba(79, 76, 76, 1);
+@grey08: rgba(79, 76, 76, 0.8);
+@grey09: rgba(79, 76, 76, 0.9);
+ 
+@currentColor:@colorAccent;
+@colorSuccess:@colorSecond;
+@linkColor: @colorSecond;
+
+
+@fontSize: 16px;
+@h1: @fontSize*1.6;
+@h2: @fontSize*1.4;
+@h3: @fontSize*1.2;
+@img: '../img';
+
+@widthIcon: 21px;
+
+.iconsStyle(@color:@colorAccent; @width:@widthIcon ;  ){
+	color: @color;
+	width: @width;
+	font-family: 'icons' !important;
+	font-size: 1rem;
+}
+.flex(@dir: row;@js: space-between; @ai: center){
+	display: flex;
+	flex-flow: @dir nowrap;
+	justify-content: @js;
+	align-items: @ai;
+}
+.shadow(@colorBox:@colorSecond){
+   box-shadow:inset 0 0 3px 0 @colorBox;
+}
+.gradient{
+background-image: radial-gradient(ellipse at center, rgba(60, 60, 62, 0.1) 20%, rgba(60, 60, 62, 0.2) 40%, rgba(31, 31, 32, 0.8) 100%);
+ 
+}
+.font(@fontName; @weight: normal; @style: normal) {
+  font-family: '@{fontName}';  
+  src: local('@{fontName}'),  
+    url('../fonts/@{fontName}.ttf') format('truetype');    
+  font-weight: @weight;
+  font-style: @style;
+}
+.border-bottom{
+ border-bottom: 1px solid @grey08;
+}
+
+@Roboto: 'Roboto';
+@fontRoboto: '@{Roboto}-Regular';
+@fontRobotoBold: '@{Roboto}-Bold';
+
+@RobotoCondensed: 'RobotoCondensed';
+@fontRobotoCondensed: '@{RobotoCondensed}-Regular';
+@fontRobotoCondensedBold: '@{RobotoCondensed}-Bold';
+
+//Mode: mobile;
+@mobile: 426px;
+@tablet-area: 425px;
+
+//@mobile-max;
+@mobile-sm: 590px;
+@tablet-area: 589px;
+
+// Mode: Tablet
+@tablet: 768px;
+@tablet-area: 750px;
+
+// Mode: Desktop
+@desktop: 1025px;
+@desktop-area: 992px;

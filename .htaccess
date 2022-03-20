@@ -1,0 +1,6 @@
+AddDefaultCharset utf-8
+Options +FollowSymLinks
+RewriteEngine On
+#Директива RewriteRule устанавливает правила перехода
+#всегда открывается папка public
+RewriteRule ^(.*)$ http://localhost/netcloud/public/$1
