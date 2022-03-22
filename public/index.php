@@ -13,7 +13,9 @@ require '../vendor/libs/functions.php';
 /**Функция автозагруки классов
  * загрузка классов из APP/controllers * 
  */
+
 define('WWW',__DIR__);//ТЕКУЩАЯ ПАПКА public
+
 define('CORE',dirname(__DIR__).'/vendor/core');
 define('ROOT',dirname(__DIR__));//это корень 
 define('APP',dirname(__DIR__).'/app');//заходит в папку APP

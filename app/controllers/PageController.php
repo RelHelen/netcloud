@@ -5,7 +5,7 @@
  * Page\view\contacts ...
  */
 namespace app\controllers;
-class Page extends App{   
+class PageController extends AppController{   
 
     public function viewAction(){
         debug($this->route);

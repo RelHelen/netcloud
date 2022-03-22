@@ -4,8 +4,7 @@
  * 
  */
 namespace app\controllers;
-class Post extends App{
-   
+class PostController extends AppController{   
 
     public function indexAction(){
         debug($this->route);

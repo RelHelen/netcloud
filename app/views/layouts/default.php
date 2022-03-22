@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Default: Система оплаты ренты Сloud Rental</title> 
+	<title>Default::<?=$title?> Система оплаты ренты Сloud Rental</title> 
 
-	<link rel="stylesheet" href="css/reboot.css">
-	<link rel="stylesheet" href="icons/style.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/netcloud/css/reboot.css">
+	<link rel="stylesheet" href="/netcloud/icons/style.css">
+	<link rel="stylesheet" href="/netcloud/css/style.css">
 
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -19,7 +19,7 @@
 			<nav class="nav-main">
 				<div class="logo">
 					<a href="#">
-						<img class="logo__img" src="img/logo.png" alt="">
+						<img class="logo__img" src="/netcloud/img/logo.png" alt="">
 					</a>
 					<a href="#">
 						<span class="logo__txt">cloud rental</span>
@@ -77,6 +77,17 @@
 				</header>
                 <!-- подключили шаблон layouts/default -->
                 <?=$content?>
+				<br>
+				<hr>
+				<p>
+				<b>Rоличество запросов:</b> 
+				</p>
+				<?= debug(\vendor\core\Db::$countSql)?>
+				<br>
+				<p>
+					<b>История запросов</b> <br>выполняемый запрос на странице в шаблоне default:
+				</p>
+				<?= debug(\vendor\core\Db::$queries)?>
                  <!--
 				<nav class="panel-nav">
                

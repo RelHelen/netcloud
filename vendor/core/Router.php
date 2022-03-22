@@ -86,8 +86,8 @@ class Router {
             //в  $controller помещаем реззульат контроллера
             //$controller=self::$route['controller'];
             $controller=self::$route['controller'];
-            $controller='app\controllers\\'. $controller;   
-             //debug(self::$route);       
+            $controller='app\controllers\\'. $controller.'Controller';   
+             debug($controller);       
             if(class_exists($controller)){                
                 $contrObj=new $controller(self::$route);                
                 $action = self::lowerCamelCase(self::$route['action']).'Action';

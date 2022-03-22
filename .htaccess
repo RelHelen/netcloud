@@ -2,5 +2,6 @@ AddDefaultCharset utf-8
 Options +FollowSymLinks
 RewriteEngine On
 #Директива RewriteRule устанавливает правила перехода
-#всегда открывается папка public
-RewriteRule ^(.*)$ http://localhost/netcloud/public/$1
+#всегда открывается папка public при старте сайта
+RewriteRule ^(.*)$ public/$1
+#RewriteRule ^(.*)$ http://localhost/netcloud/public/$1
