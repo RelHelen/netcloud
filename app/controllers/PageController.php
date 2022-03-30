@@ -9,7 +9,7 @@ class PageController extends AppController{
 
     public function viewAction(){
         debug($this->route);
-        echo '<p>Page::veiw</p>';
+        echo '<p> PageController::veiw</p>';
     }
     
 }

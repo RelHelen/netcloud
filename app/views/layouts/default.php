@@ -3,25 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Default::<?=$title?> Система оплаты ренты Сloud Rental</title> 
-
-	<link rel="stylesheet" href="/netcloud/css/reboot.css">
-	<link rel="stylesheet" href="/netcloud/icons/style.css">
-	<link rel="stylesheet" href="/netcloud/css/style.css">
+	<!-- <title>Система оплаты ренты Сloud Rental</title>  -->
+	<?php \vendor\core\base\View::getMeta(); ?>
+	<link rel="stylesheet" href="<?=PATH?>css/reboot.css">
+	<link rel="stylesheet" href="<?=PATH?>css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="<?=PATH?>icons/style.css">
+	<link rel="stylesheet" href="<?=PATH?>css/style.css">
+	<!-- <script src="<?=PATH?>script/main.js" type="module"></script> -->
 
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-
+<![endif]
+-->
 </head>
-<body><div class="container cont_p">
-	<header class="header">		
+<body>
+	<div class="container cont_p">
+	<header class="header">
+		
 			<nav class="nav-main">
 				<div class="logo">
-					<a href="#">
-						<img class="logo__img" src="/netcloud/img/logo.png" alt="">
+					<a href="index.php">
+						<img class="logo__img" src="<?=PATH?>img/logo.png" alt="">
 					</a>
-					<a href="#">
+					<a href="index.php">
 						<span class="logo__txt">cloud rental</span>
 					</a>
 				</div>				
@@ -49,35 +53,26 @@
 			</nav>
 		
 	</header>
-	<main class="main">
-	
-    
+	<main class="main" id="main">   
 			<header class="main-header ptl">
 				<h2 class="main-header__h2">
-					Default:: Ваши данные
+					<?php 
+					echo  $this->title; //вывод заголовка
+					 
+					?>
 				</h2>
 			</header>
 			<section class="panel panel_view ptl">
-				<header class="panel-header">
-					<ul class="panel-status">
-						<li class="panel-status-item panel-balance panel-balance_limit">
-							<span class="panel-par">Баланс:</span>
-							<span class="panel-value panel-value_currency">27 000</span>	
-						</li>
-						<li class="panel-status-item panel-date panel-date_limit">
-							<span class="panel-par">Дата списания:</span>
-							<span class="panel-value">28.03.21</span>	
-						</li>
-					</ul>	
-					<div class="ctl-count">			
-						<form action="#" class="ctl-count-form">
-							<button type="submit"class="ctl-count-btn" id="ctl-count-btn"><span>Пополнить счет</span></button>
-						</form>
-					</div>
-				</header>
+		        <?php 
+				 
+				 require 'header-section.php';
+				 
+				 ?>
+				 
                 <!-- подключили шаблон layouts/default -->
-                <?=$content?>
-				<br>
+                 <?=$content?>                			
+		    </section>  
+		<br>
 				<hr>
 				<p>
 				<b>Rоличество запросов:</b> 
@@ -87,23 +82,7 @@
 				<p>
 					<b>История запросов</b> <br>выполняемый запрос на странице в шаблоне default:
 				</p>
-				<?= debug(\vendor\core\Db::$queries)?>
-                 <!--
-				<nav class="panel-nav">
-               
-               
-					<ul class="panel-menu">
-						<li class="panel-menu-item" id="contracts">
-							<a class="panel-menu-link" href="contracts.php">Договора</a>
-						</li>
-						<li class="panel-menu-item" id="devaces"><a class="panel-menu-link"  href="" >Объекты</a></li>
-						<li class="panel-menu-item" id="operation"><a class="panel-menu-link"  href="">Операции по счету</a></li>
-						<li class="panel-menu-item" id="personal"><a class="panel-menu-link"  href="">Личный кабинет</a></li>
-					</ul>
-				</nav>
-                -->					
-		</section>
-	
+				<?= debug(\vendor\core\Db::$queries)?>	
 	</main>
 
 	<footer class="footer">
@@ -158,5 +137,11 @@
 		</div>
 	</footer>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<?php 
+foreach($scripts as $script){
+	echo $script;
+}
+?>
 </body>
 </html>

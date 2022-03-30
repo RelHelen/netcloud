@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Router, подключает controllers
  */
@@ -87,7 +88,7 @@ class Router {
             //$controller=self::$route['controller'];
             $controller=self::$route['controller'];
             $controller='app\controllers\\'. $controller.'Controller';   
-             debug($controller);       
+             //debug($controller);       
             if(class_exists($controller)){                
                 $contrObj=new $controller(self::$route);                
                 $action = self::lowerCamelCase(self::$route['action']).'Action';
@@ -97,16 +98,23 @@ class Router {
                     $contrObj->$action();
                     $contrObj->getView();                    
                 } else{
-                    echo "<p>метод $controller::$action не найден</p>";
+                    //echo "<p>метод $controller::$action не найден</p>";
+                   //пишем исключение для ненайденой страницы
+                   throw new \Exception("Метод $controller::$action не найден",404); 
                 }        
                 //echo 'ok';
             }else{
-                echo "<p>контроллер $controller не найден</p>";
+                //echo "<p>контроллер $controller не найден</p>";
+                 //пишем исключение для ненайденой страницы
+                   throw new \Exception("Контроллер $controller не найден",404);
             }
            
         }else{
-            http_response_code(404);//адрес не найден 
-            include '404.php';
+           // http_response_code(404);//отправляем код ошибки
+           // include '404.php';
+
+         //пишем исключение для ненайденой страницы
+          throw new \Exception("Страница не найдена",404);
         }
     }
 

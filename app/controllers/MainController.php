@@ -1,69 +1,68 @@
 <?php
-/**Зададим пространство имен namespace
- * это путь к классу начиная от корня нашего приложения
- * 
+/** Главная страница 
  */
 namespace app\controllers;
 use app\models\Main;
+use R;
+use \vendor\core\base\View;
 
 class MainController extends AppController{
-    //public $layout='main';//задаем конкретный шаблон для всего класса
-    public function indexAction(){
-        echo 'Main::index';
-        //$this->layout=false;//не подключать шаблон , например для ajax запросах
-        //$this->layout='main';//задаем конкретный шаблон для данного action
-               //layout='main' - описан в layouts/main
-       // $this->view='test';//задаем конкретный вид
-                //view='test' - описан в views/Main/test
+  //public $layout='main';//задаем конкретный шаблон для всего класса  
+    public function indexAction(){ 
+      //public $layout='main';//задаем конкретный шаблон для всего класса
 
-        //пережача переменных в view
-        //$name="Helen";
-       //$this->setParams(['name'=> $name,'hi'=>'hello']);
-       //$hi="hello";
-    //    $mas=[
-    //       'user'=>'Vasya',
-    //       'age'=>25,
-    //    ];
-       $title="Page title-";
-      // $this->setParams(compact('name','hi','mas','title'));//
-      
-
+       $page='main';        
+       $this->setTitle('Ваши данные');//установка заголовка
+      //$title=$this->setTitle('Ваши данные');
+      //debug($this->route['controller']);
+      View::setMeta('Система оплаты ренты Сloud Rental','Система оплаты','Система оплаты');
       /**
        * подключаемся к бд и таблице
        * создаем объект класса Model (vendor\core\base\model.php)
-       */
-      $model=new Main;
+       */    
+      $model=new Main;//создаем объект модели соединения с БД
 
-      //сформировали зоапрос     
-      //$res=$model->query("SELECT * FROM menu");
-      $res=$model->findAll();
-
-      //выбрать только одну запись contracts
-        //$list=$model->findOne('contracts','name');
-        //$list=$model->findOne('contracts');//передали поле поска в файле модели $pk='name';
-        $list=$model->findOne('1','id_menu');
-        //echo '<br>LIST=';
-        //debug($list);
-
-        //ПРОИЗВОЛНЫЙ ЗАПРОС
-        $sgl="SELECT * FROM menu ORDER BY name LIMIT 2";
-        $data=$model->findBySql($sgl);
-        //debug($data);
-
-        $sgl2="SELECT * FROM {$model->table} WHERE page='main'  ORDER BY NAME";
-        $data2=$model->findBySql($sgl2);
-        //debug($data2);
-
-        $sgl3="SELECT * FROM customers WHERE cust_name_org LIKE ?";
-        $data3=$model->findBySql($sgl3,['%OOO%']);
-        //debug($data3);
-
-        //$sgl3="SELECT * FROM customers WHERE cust_name_org LIKE ?";
-        $data4=$model->findLike('OOO','cust_name_org','customers');
-        debug($data4);
-
-      //передаем резуkьтат запороса в вид 
-      $this->setParams(compact('title','res','list'));
-     
+      //$this->setParams(compact(''));     
     }
+
+
+    //ajax запрос
+    //https://www.youtube.com/watch?v=In3qfMY1G8E&list=PLD-piGJ3Dtl1gX1wh22vBeeg6gMP1VlnW&index=13
+
+    public function testAction(){
+      $this->setTitle('TestMain::index');//установка заголовка
+      
+      //если данные поступили из ajax ,то
+      if ($this->isAjax()){
+           //получаем данные из Ajax
+          //сначала из модели
+           $model= new Main;
+           //debug($model);
+   $list=\R::findOne('contracts',"id={$_POST['id']}");
+           //debug($list);
+   
+   //передаем данные в вид testic для формирования отображения
+   $this->loadView('testic',compact('list'));
+
+
+
+  //$data=['answer'=>'Ответ с сервера','kod'=>'200'];
+  //echo json_encode($data);
+          //$this->layout=false;
+           die;
+       }else{
+          //иначе, если просто была открыта страница
+          
+           $this->layout='main';//задаем конкретный шаблон для данного action
+          
+       }
+      
+  }
+
+  public function testicAction(){
+       //$this->setTitle('Test2Main::index');//установка заголовка
+       //$this->layout='main';//задаем конкретный шаблон для данного action
+        echo '222';
+       $this->layout=false;
+  }
 }
