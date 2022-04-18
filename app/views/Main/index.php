@@ -1,16 +1,33 @@
 <?php
 //echo 'index view Main    ';
 ?>
-<nav class="panel-nav">
+<!-- <nav class="panel-nav">
     <ul class="panel-menu">
         <li class="panel-menu-item" id="contracts">
             <a class="panel-menu-link" href="<?=PATH?>contracts">Договора</a>
         </li>
-        <li class="panel-menu-item" id="<?=PATH?>devaces"><a class="panel-menu-link"  href="" >Объекты</a></li>
-        <li class="panel-menu-item" id="<?=PATH?>operation"><a class="panel-menu-link"  href="">Операции по счету</a></li>
-        <li class="panel-menu-item" id="<?=PATH?>personal"><a class="panel-menu-link"  href="">Личный кабинет</a></li>
+        <li class="panel-menu-item" id="devaces"  >
+                 <a href="<?=PATH?>devaces" class="panel-menu-link"  >Объекты</a></li>
+        <li class="panel-menu-item" id="operation">
+                <a  href="<?=PATH?>operation" class="panel-menu-link"  >Операции по счету</a></li>
+        <li class="panel-menu-item" id="personal">
+                <a  href="<?=PATH?>personal" class="panel-menu-link"  >Личный кабинет</a>
+        </li>
     </ul>
-</nav>
+</nav> -->
+<?php if(!empty($menu)):?>
+		<nav class="panel-nav">
+			
+		    <ul class="panel-menu">
+		    	<?php foreach($menu as $list): ?>
+		        <li class="panel-menu-item" id="<?=$list['title']?>">
+		            <a class="panel-menu-link" href="<?=$list['title']?>"><?=$list['header']?></a>
+		        </li>
+		   		<?php endforeach;?>
+		    </ul>
+			
+		</nav>
+    <?php endif;?>
 <div>
 <button class="btn" id="btn-send">
     кнопка

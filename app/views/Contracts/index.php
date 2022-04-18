@@ -6,9 +6,8 @@
 			<section class="panel panel_view p-tl">
 				<div class="box  br-lt contract">					
 					<?php $i=0;  if (!empty($contracts)): ?>
-						<?php foreach($contracts as $res): $i++;  ?>
-							
-						<a class="link-shadow" href="contract?q=<?=$res['contr_nomer']?>" id="id-<?=$i;?>">  
+						<?php foreach($contracts as $res): $i++;  ?>							
+						<a class="link-shadow" href="?q=<?=$res['contr_nomer']?>" id="id-<?=$i;?>">  
 							<div class="contract-item">				
 									<h3 class="contract-header">
 										Договор <?=$res['contr_nomer']?> от  <?=$res['contr_date_st']?> </h3>

@@ -3,13 +3,13 @@
 //components-  те компоненты, которые необходимы при загрузке
 //vendor\libs\Cache - //путь к классу, который создает объект cache
 //settings - настройки
-$config=[
-	'components'=>[
-		'cache'=>'vendor\libs\Cache',
-		'test'=>'vendor\libs\Test',
+$config = [
+	'components' => [
+		'cache' => 'app\vendor\libs\Cache',
+		'test' => 'app\vendor\libs\Test',
 	],
-	'settings'=>[
-		''=>'',
+	'settings' => [
+		'' => '',
 	],
 ];
 return $config;

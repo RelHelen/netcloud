@@ -1,0 +1,168 @@
+[2022-04-17 23:05:54] Ошибка: syntax error, unexpected '}', expecting ',' or ';' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 95 
+ ====****=====================
+[2022-04-17 23:06:37] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:06:37] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
+[2022-04-17 23:08:25] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:08:25] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
+[2022-04-17 23:09:48] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:09:48] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
+[2022-04-17 23:10:28] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:10:28] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
+[2022-04-17 23:11:20] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:11:20] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:12:30] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:12:30] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:13:07] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:13:07] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:14:23] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:14:23] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:15:16] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:15:16] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:16:39] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:16:39] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:17:02] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 104 
+ ====****=====================
+[2022-04-17 23:17:02] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:18:04] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 107 
+ ====****=====================
+[2022-04-17 23:18:04] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:20:36] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 107 
+ ====****=====================
+[2022-04-17 23:20:36] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:21:00] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 107 
+ ====****=====================
+[2022-04-17 23:21:00] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:21:40] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:21:40] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:22:24] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:22:24] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:22:46] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:22:46] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:23:18] Ошибка: Object of class PDOStatement could not be converted to string || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 108 
+ ====****=====================
+[2022-04-17 23:23:46] Ошибка: Object of class PDOStatement could not be converted to string || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 108 
+ ====****=====================
+[2022-04-17 23:23:57] Ошибка: Object of class PDOStatement could not be converted to string || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 108 
+ ====****=====================
+[2022-04-17 23:24:21] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:24:21] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:24:52] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.user' doesn't exist || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:24:52] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:25:36] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:25:36] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:26:28] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:26:28] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:28:08] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:28:08] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:28:39] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:28:39] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:28:57] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:28:57] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:29:25] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:29:25] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:29:27] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:29:27] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:30:04] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:30:04] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:30:11] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:30:11] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:30:11] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:30:11] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:30:11] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:30:11] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:30:12] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:30:12] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:30:39] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:30:39] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:31:05] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:31:05] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:31:46] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:31:46] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:32:07] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:32:07] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:32:08] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:32:08] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 111 
+ ====****=====================
+[2022-04-17 23:33:13] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:33:13] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
+[2022-04-17 23:34:06] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:34:06] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
+[2022-04-17 23:35:12] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:35:12] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
+[2022-04-17 23:35:54] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_logi' in 'where clause' || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\Db.php || Строка: 106 
+ ====****=====================
+[2022-04-17 23:35:54] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\app\vendor\core\ErrorHandler.php || Строка: 112 
+ ====****=====================
