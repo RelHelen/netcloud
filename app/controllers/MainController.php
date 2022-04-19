@@ -7,34 +7,26 @@ namespace app\controllers;
 
 use app\models\Main;
 //use R;
-use app\vendor\core\base\View;
-use app\vendor\core\Db;
+use fw\core\base\View;
+use fw\core\Db;
 
 class MainController extends AppController
 {
 
-
   //public $layout='main';//задаем конкретный шаблон для всего класса  
   public function indexAction()
   {
-    //public $layout='main';//задаем конкретный шаблон для всего класса
-
-    $page = 'main';
+    //public $layout='main';//задаем конкретный шаблон для всего класса     
     $this->setTitle('Ваши данные'); //установка заголовка
     //$title=$this->setTitle('Ваши данные');
     //debug($this->route['controller']);
     View::setMeta('Система оплаты ренты Сloud Rental', 'Система оплаты', 'Система оплаты');
     /**
-     * подключаемся к бд и таблице
-     * создаем объект класса Model (vendor\core\base\model.php)
+     * подключаемся к бд и таблице     
      */
     $model = new Main; //создаем объект модели соединения с БД
-
-    //подключаем функцию getUsers
-    $model->getUsers();
-
     $menu = $this->menu; //строим меню
-    //debug($menu);
+    //$model->getU();    $model->getUcolumn();
     $this->setParams(compact('menu'));
   }
 

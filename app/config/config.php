@@ -5,8 +5,8 @@
 //settings - настройки
 $config = [
 	'components' => [
-		'cache' => 'app\vendor\libs\Cache',
-		'test' => 'app\vendor\libs\Test',
+		'cache' => 'fw\libs\Cache',
+		'test' => 'fw\libs\Test',
 	],
 	'settings' => [
 		'' => '',

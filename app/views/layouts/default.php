@@ -5,10 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <title>Система оплаты ренты Сloud Rental</title>  -->
-	<?php app\vendor\core\base\View::getMeta(); ?>
-	<link rel="stylesheet" href="<?= PATH ?>css/reboot.css">
-	<link rel="stylesheet" href="<?= PATH ?>css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="<?= PATH ?>icons/style.css">
+	<?php fw\core\base\View::getMeta(); ?>
+
+	<!-- Google Font: Source Sans Pro -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="<?= PATH ?>assets/fontawesome-free/css/all.min.css">
+	<!-- overlayScrollbars -->
+	<link rel="stylesheet" href="<?= PATH ?>assets/overlayScrollbars/css/OverlayScrollbars.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="<?= PATH ?>assets/css/adminlte.min.css">
+
+	<!-- <link rel="stylesheet" href="<?= PATH ?>css/reboot.css">
+	<link rel="stylesheet" href="<?= PATH ?>css/bootstrap-grid.min.css"> -->
+	<link rel="stylesheet" href="<?= PATH ?>assets/icons/style.css">
 	<link rel="stylesheet" href="<?= PATH ?>css/style.css">
 	<!-- <script src="<?= PATH ?>script/main.js" type="module"></script> -->
 
@@ -18,73 +28,89 @@
 -->
 </head>
 
-<body>
-	<div class="container cont_p">
-		<header class="header">
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+	<div class="wrapper">
+		<!-- Preloader -->
+		<!-- <div class="preloader flex-column justify-content-center align-items-center">
+			<img class="animation__wobble" class="logo__img" src="<?= PATH ?>img/logo.png" alt="logo" height="60" width="60">
+		</div> -->
 
-			<nav class="nav-main">
-				<div class="logo">
-					<a href="index.php">
-						<img class="logo__img" src="<?= PATH ?>img/logo.png" alt="">
-					</a>
-					<a href="index.php">
-						<span class="logo__txt">cloud rental</span>
-					</a>
-				</div>
-				<div class="menu">
-					<div class="menu-hamburger">
-						<input id="menu__toggle" type="checkbox" />
-						<label class="menu__btn" for="menu__toggle">
-							<span></span>
-						</label>
-						<ul class="menu__box">
-							<li>
-								<a class="menu__item" href="#">Главная</a>
-							</li>
-							<li>
-								<a class="menu__item" href="#">Проекты</a>
-							</li>
-							<li>
-								<a class="menu__item" href="#">Команда</a>
-							</li>
-							<li>
-								<a class="menu__item" href="#">Блог</a>
-							</li>
-							<li>
-								<a class="menu__item" href="#">Контакты</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+		<!-- Navbar -->
+		<nav class="main-header navbar navbar-expand navbar-dark">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" data-widget="pushmenu" href="#" role="button">
+						<i class="fas fa-bars"></i></a>
+				</li>
+				<li class="nav-item d-none d-sm-inline-block">
+					<a href="index3.html" class="nav-link">Главная</a>
+				</li>
+				<li class="nav-item d-none d-sm-inline-block">
+					<a href="#" class="nav-link">Контакты</a>
+				</li>
+			</ul>
 
-		</header>
-		<main class="main" id="main">
-			<header class="main-header ptl">
-				<h2 class="main-header__h2">
+			<!-- Right navbar links -->
+			<ul class="navbar-nav ml-auto">
+				<!-- Messages Dropdown Menu -->
+				<?php
+				$this->getPart('prof-section');
+				?>
+				<li class="nav-item">
+					<a class="nav-link" data-widget="fullscreen" href="#" role="button">
+						<i class="fas fa-expand-arrows-alt"></i>
+					</a>
+				</li>
+			</ul>
+			<!-- /Right navbar links -->
+		</nav>
+		<!-- /.navbar -->
+
+		<!-- Main Sidebar Container -->
+		<!-- aside -->
+		<?php
+		//$this->getPart('aside'); 
+		?>
+		<!-- /.aside -->
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<main class="main">
+				<header class="ptl">
+					<h2 class="main-header__h2">
+						<?php
+						echo  $this->title; //вывод заголовка
+						?>
+					</h2>
+				</header>
+				<section class="panel panel_view ptl">
 					<?php
-					echo  $this->title; //вывод заголовка
+					//$this->getPart('header-section');
+					//$this->getPart('navmain-section');
 
 					?>
-				</h2>
-			</header>
-			<section class="panel panel_view ptl">
-				<?php
+					<?= $content; ?>
+				</section>
+			</main>
 
-				require 'header-section.php';
 
-				?>
+			<hr>
+			<p>
+				<b>Rоличество запросов:</b>
+			</p>
+			<?= debug(\fw\core\Db::$countSql) ?>
+			<br>
+			<p>
+				<b>История запросов</b> <br>выполняемый запрос на странице в шаблоне default:
+			</p>
+			<?= debug(\fw\core\Db::$queries) ?>
 
-				<!-- подключили шаблон layouts/default -->
-				<?= $content ?>
-			</section>
+		</div><!-- /.content-wrapper -->
 
-		</main>
-
-		<footer class="footer">
-			<div class="footer-contact">
-
-			</div>
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			<!--
 			<div class="footer-menu">
 				<div class="footer-menu-item">
 					<h4 class="footer-head">О сервисе</h4>
@@ -112,6 +138,7 @@
 					</ul>
 				</div>
 			</div>
+-->
 			<div class="footer-bottom">
 				<div class="row">
 					<div class="col">
@@ -122,28 +149,27 @@
 					<div class="col"></div>
 					<div class="col"></div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col">
 						<span>Согласие на обработку персональных данных (пользовательское соглашение)</span>
 					</div>
 					<div class="col"><span>Политика конфиденциальности </span> </div>
 					<div class="col"><span>Использованиe Cookies
 						</span></div>
-				</div>
+				</div> -->
 			</div>
 		</footer>
-		<hr>
-		<p>
-			<b>Rоличество запросов:</b>
-		</p>
-		<?= debug(\app\vendor\core\Db::$countSql) ?>
-		<br>
-		<p>
-			<b>История запросов</b> <br>выполняемый запрос на странице в шаблоне default:
-		</p>
-		<?= debug(\app\vendor\core\Db::$queries) ?>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+	</div> <!-- /.wrapper -->
+
+	<script src="assets/jquery.js"></script>
+	<!-- Bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- overlayScrollbars -->
+	<script src="assets/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+	<!-- AdminLTE App -->
+	<script src="assets/js/adminlte.js"></script>
 	<?php
 	foreach ($scripts as $script) {
 		echo $script;
