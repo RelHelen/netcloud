@@ -53,7 +53,7 @@ class MainController extends AppController
       //$data=['answer'=>'Ответ с сервера','kod'=>'200'];
       //echo json_encode($data);
       //$this->layout=false;
-      die;
+
     } else {
       //иначе, если просто была открыта страница
 

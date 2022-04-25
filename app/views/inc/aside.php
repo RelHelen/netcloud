@@ -10,9 +10,12 @@
         <nav class="mt-2 nav__main">
             <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
 
-                <?php
-                $this->getPart('sidebar-section');
+                <?php if (isset($_SESSION['user'])) :
+                    //debug($_SESSION['user']);
+                    $this->getPart('sidebar-section');
                 ?>
+                <?php endif;  ?>
+
                 <li class="nav-item">
                     <a href="pages/kanban.html" class="nav-link">
                         <i class="nav-icon fas fa-columns"></i>

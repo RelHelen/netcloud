@@ -10,6 +10,14 @@ class Main extends Model
   public $table = 'menu';
   public $pk = 'id';
 
+  public function getMenuAll()
+  {
+    echo '<h5>table = menu</h5>';
+    // Получаем и выводим данные их меню
+    echo "<pre>";
+    print_r($this->getAll('menu'));
+  }
+
   public function getU()
   {
     echo '<h5>table = users</h5>';
@@ -32,7 +40,7 @@ class Main extends Model
     ];
     $sql = "SELECT id,users_login,users_id_rol FROM users WHERE id=:id";
     $data1 = $this->pdo->db_query($sql, $params);
-    $data2 = $this->pdo->column(1, $sql, $params);
+    $data2 = $this->pdo->getColumn($sql, $params);
     echo "<br>getUcolumn::data-> " . $data2; //выведет user
 
     $params3 = [

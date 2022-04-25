@@ -5,7 +5,7 @@
              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                  <div class="card" style="border-radius: 15px;">
                      <div class="card-body p-5">
-
+                         <h4>Вход в личный кабинет</h4>
                          <form class="form" id="check" method="POST" action="<?= PATH ?>user/login">
 
                              <div class=" mb-4">
@@ -30,7 +30,8 @@
 
 
                          </form>
-
+                         <p><a href="#">Возможности сервиса</a></p>
+                         <p><a href="#">Как получить доступ к сервису</a></p>
                      </div>
                  </div>
              </div>

@@ -2,6 +2,7 @@
 
 /**
  * Пользователи * 
+ * https://yandex.ru/video/preview/?filmId=3362678052779958829&from=tabbar&parent-reqid=1647610302540339-9713605756647213479-sas2-0989-48a-sas-l7-balancer-8080-BAL-7054&text=Урок%2018.%20%20Создание%20собственного%20фреймворка.%20%20Админка.%20%20Часть%201&url=http%3A%2F%2Ffrontend.vh.yandex.ru%2Fplayer%2FvtRhy6beELgY
  */
 
 namespace app\controllers;
@@ -16,15 +17,22 @@ class UserController extends AppController
     public function singupAction()
     {
         View::setMeta('Регистрация');
-        $this->setTitle('Форма регистрации');
+        $this->setTitle('');
         if (!empty($_POST)) {
+            //  debug($_POST);
+            //  die;
+
             //создаем объект модели
             $user = new User();
             $data = $_POST;
-            $user->load($data);
+            $table = $user->table; //'users'
+            // die;
+            $user->loadAtr($data, $table); //для формирования [] атрибуттов из полей формы
+
 
             //не валидны
             if (!$user->validate($data) || !$user->checkUnique()) {
+                //получили ошибки
                 $user->getErrors();
                 //запоминаем, что вводил пользователь
                 $_SESSION['form_data'] = $data;
@@ -32,12 +40,12 @@ class UserController extends AppController
             }
 
             //если данные валидны кодируем пароль
-            $user->attributes['pass'] = password_hash(
-                $user->attributes['pass'],
+            $user->attributes['users_pass'] = password_hash(
+                $user->attributes['users_pass'],
                 PASSWORD_DEFAULT
             );
 
-            if ($user->save('users')) {
+            if ($user->insertSingleRow('users') > 0) {
                 $_SESSION['success'] = "Вы успешно зарегестрировались";
             } else {
                 $_SESSION['error'] = "Ошибка! Попробуйте позже";
@@ -53,7 +61,7 @@ class UserController extends AppController
     public function loginAction()
     {
         View::setMeta('Авторизация');
-        $this->setTitle('Форма авторизации');
+        $this->setTitle('');
         //если данные пришли POST то проверяем их
         if (!empty($_POST)) {
             //создаем объект модели

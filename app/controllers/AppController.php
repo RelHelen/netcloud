@@ -26,14 +26,14 @@ class AppController extends Controller
     // };
 
     //find всех записей из таблицы users
-    $sql = "SELECT * FROM menu";
-    $this->menu = $model->findBySql($sql);
+    //$sql = "SELECT * FROM menu";
+    // $this->menu = $model->findBySql($sql);
     $menu = $this->menu;
-    echo '<h5>table = menu</h5>';
-    foreach ($menu as $val) {
-      echo $val['id'] . ':';
-      echo $val['title'] . '<br>';
-    };
+    //echo '<h5>table = menu</h5>';
+    //foreach ($menu as $val) {
+    //echo $val['id'] . ':';
+    // echo $val['title'] . '<br>';
+    // };
 
 
     // debug($this->menu);
