@@ -41,8 +41,9 @@ class User extends Model
             'mail' => $this->attributes['users_mail'],
         ];
         $user = $this->findBySql('SELECT * FROM users WHERE users_login =:login OR users_mail = :mail LIMIT 1', $params);
-        //debug($user);
+        // debug($user);
         // die;
+
         if ($user) {
             if ($user->login == $this->attributes['users_login']) {
                 $this->errors['unique'][] = 'Этот логин уже занят';
@@ -75,6 +76,7 @@ class User extends Model
                 :users_id_rol,
                 :users_data_reg               
             )";
+
         $params = [
             'users_login' => $this->attributes['users_login'],
             'users_pass' => $this->attributes['users_pass'],
@@ -82,10 +84,12 @@ class User extends Model
             'users_id_rol' => $this->attributes['users_id_rol'],
             'users_data_reg' => $this->attributes['users_data_reg']
         ];
+
         // debug($this->attributes['users_data_reg']);
         // foreach ($params as $value) {
         //     echo gettype($value), "\n";
         // }
+        // die;
         $res = $this->pdo->execute($sql, $params);
         $this->pdo->lastInsertId(); //номер последнего индекса
         return $res;
@@ -112,39 +116,37 @@ class User extends Model
             $params = [
                 'login' => $login
             ];
-
+            // debug($params);
+            // die;
             if ($isAdmin) {
                 //авторизация админа для админки
-                // $user = $this->findBySql('SELECT * FROM users WHERE users_login=:login AND users_id_rol=:2 LIMIT 1', $params);
-
-                //findOne('users', "login = ? AND users_id_rol = '2' LIMIT 1", [$login]);
+                if (isset($_SESSION['user'])) {
+                    debug($_SESSION['user']);
+                    unset($_SESSION['user']);
+                };
+                $params = [
+                    'login' => $login,
+                    'rol' => 2
+                ];
+                $user = $this->findBySql('SELECT * FROM users WHERE users_login=:login AND users_id_rol=:rol LIMIT 1', $params);
             } else {
                 //авторизация обычного пользователя
                 //из таблицы users получаем запись по  логину 
                 $user =  $this->findBySql('SELECT * FROM users WHERE users_login=:login  LIMIT 1', $params);
                 //debug($user);
-
-                //$user =  $this->findOne('users_login', $login);
-                //$user =  $this->findOne('login = ? LIMIT 1', [$login]);
-
             }
-
-
             if ($user) {
                 debug($user);
                 //сравниваем пароль с hash паролем из бд таблицы users
                 if (password_verify($pass, $user[0]['users_pass'])) {
-
                     //передае данные в сессию без пароля
                     foreach ($user[0] as $key => $val) {
                         //ключ - название полей таблицы
-
-                        if ($key == 'users_login' || $key == 'users_mail') {
+                        if ($key == 'users_login' || $key == 'users_mail' || $key == 'users_id_rol') {
                             $_SESSION['user'][$key] = $val;
                             debug($val);
                         }
                     }
-
                     return true;
                 }
             }
@@ -158,6 +160,9 @@ class User extends Model
     {
         //если существует в сессии пользователь
         //и он является  администратором
+        // if (isset($_SESSION['user'])) {
+        //     debug($_SESSION['user']);
+        // };
         return (isset($_SESSION['user']) && $_SESSION['user']['users_id_rol'] == '2');
     }
 }

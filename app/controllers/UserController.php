@@ -7,9 +7,10 @@
 
 namespace app\controllers;
 
+use fw\core\Db;
 use app\models\User;
 use fw\core\base\View;
-use fw\core\Db;
+
 
 class UserController extends AppController
 {

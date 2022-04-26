@@ -18,7 +18,7 @@ class AppController extends Controller
   {
     parent::__construct($route); //сначало выполняем родительский конструктор
     //подключение к бд и таблице menu
-    $model = new App;
+    //$model = new App;
     //debug($this->route);
     //выполняем что нибудь только для конкретного конторллера и страницы
     // if($this->route['controller']=='Main' && $this->route['action']=='test'){
@@ -34,7 +34,6 @@ class AppController extends Controller
     //echo $val['id'] . ':';
     // echo $val['title'] . '<br>';
     // };
-
 
     // debug($this->menu);
   }

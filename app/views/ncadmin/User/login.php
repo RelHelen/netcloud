@@ -2,7 +2,7 @@
 
 <div class="login-box">
   <div class="login-logo">
-    <b>Admin</b>
+    <!-- <b>Admin</b> -->
   </div>
   <!-- /.login-logo -->
   <div class="card">

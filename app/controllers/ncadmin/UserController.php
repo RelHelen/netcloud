@@ -4,21 +4,22 @@
  * контроллер админской части при авторизации
  */
 
-namespace app\controllers\admin;
+namespace app\controllers\ncadmin;
 
+use fw\core\Db;
 use app\models\User;
-use fw\core\base\View;
-
+//use fw\core\base\View;
 
 class UserController extends AppadminController
 {
-
+	//public $layout = 'admin-login';
 	public function indexAction()
 	{
-		// echo __METHOD__;
+		//echo __METHOD__;
 		//debug($this->route);
+		//public $layout = 'admin-user';
 		\fw\core\base\View::setMeta('Админка | Главная страница');
-
+		$this->setTitle('Панель администратора'); //установка заголовка
 		$test = "тестовая переменная";
 		$data = ['test', 3];
 
@@ -33,8 +34,12 @@ class UserController extends AppadminController
 
 	}
 
+	//вход
 	public function loginAction()
 	{
+		//смена шаблона		  
+		$this->layout = 'admin-login';
+		$this->setTitle('Панель администратора');
 		if (!empty($_POST)) {
 			$user = new User();
 			if (!$user->isLogin(true)) {
@@ -47,8 +52,17 @@ class UserController extends AppadminController
 				redirect();
 			}
 		}
-		//смена шаблона		  
-		$this->layout = 'login-admin';
+
 		//echo __METHOD__;
+	}
+
+	//выход
+	public function logoutAction()
+	{
+
+		if (isset(($_SESSION['user']))) {
+			unset($_SESSION['user']);
+		}
+		redirect(ADMIN . '/user/login');
 	}
 }

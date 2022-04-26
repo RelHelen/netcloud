@@ -14,11 +14,12 @@
 	<!-- overlayScrollbars -->
 	<link rel="stylesheet" href="<?= PATH ?>assets/overlayScrollbars/css/OverlayScrollbars.min.css">
 	<!-- Theme style -->
-	<link rel="stylesheet" href="<?= PATH ?>assets/css/adminlte.min.css">
 
 	<!-- <link rel="stylesheet" href="<?= PATH ?>css/reboot.css">
 	<link rel="stylesheet" href="<?= PATH ?>css/bootstrap-grid.min.css"> -->
 	<link rel="stylesheet" href="<?= PATH ?>assets/icons/style.css">
+	<link rel="stylesheet" href="<?= PATH ?>assets/css/adminlte.min.css">
+
 	<link rel="stylesheet" href="<?= PATH ?>css/style.css">
 	<!-- <script src="<?= PATH ?>script/main.js" type="module"></script> -->
 
@@ -70,7 +71,7 @@
 		<!-- Main Sidebar Container -->
 		<!-- aside -->
 		<?php
-		$this->getPart('aside');
+		//$this->getPart('aside');
 		?>
 		<!-- /.aside -->
 
@@ -159,7 +160,7 @@
 						<span>Сloud Rental,</span>
 						<span>2021г </span>
 					</div>
-					<div class="col"></div>
+					<div class="col"><a href="<?= PATH ?>ncadmin">Вход в админку</a></div>
 					<div class="col"></div>
 				</div>
 				<!-- <div class="row">
@@ -176,13 +177,13 @@
 
 	</div> <!-- /.wrapper -->
 
-	<script src="assets/jquery.js"></script>
+	<script src="<?= PATH ?>assets/jquery.js"></script>
 	<!-- Bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="<?= PATH ?>assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!-- overlayScrollbars -->
-	<script src="assets/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+	<script src="<?= PATH ?>assets/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 	<!-- AdminLTE App -->
-	<script src="assets/js/adminlte.js"></script>
+	<script src="<?= PATH ?>assets/js/adminlte.js"></script>
 	<?php
 	foreach ($scripts as $script) {
 		echo $script;

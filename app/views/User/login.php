@@ -26,12 +26,18 @@
                                  <button type="submit" id="check-btn" class="btn btn-success  ">
                                      Войти</button>
                              </div>
+                             <div class="text-center text-muted ">
+                                 Нет аккаунта? <a href="<?= PATH ?>user/singup" class=" ">
+                                     Регистрация</a>
+                             </div>
 
 
 
                          </form>
-                         <p><a href="#">Возможности сервиса</a></p>
-                         <p><a href="#">Как получить доступ к сервису</a></p>
+                         <p><a href="#"><i class="fas fa-caret-square-down"></i>
+                                 <!-- fas fa-chevron-circle-up -->
+                                 Возможности сервиса</a></p>
+                         <p><a href="#"><i class="fas fa-chevron-circle-down"></i> Как получить доступ к сервису</a></p>
                      </div>
                  </div>
              </div>
