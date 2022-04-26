@@ -1,6 +1,6 @@
 <?php
 //подключаем Router
-use fw\core\Router;
+use \fw\core\Router;
 
 /**
  * при обращении к несуществующему контролеру и методу  (pages) переходим на main/index
