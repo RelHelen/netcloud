@@ -5,7 +5,7 @@
 //settings - настройки
 $config = [
 	'components' => [
-		'cache' => 'fw\libs\Cache',
+		'cache' => 'fw\core\Cache',
 		'test' => 'fw\libs\Test',
 	],
 	'settings' => [

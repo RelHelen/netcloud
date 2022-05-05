@@ -8,6 +8,7 @@ namespace app\controllers;
 use app\models\Main;
 //use R;
 use fw\core\base\View;
+use fw\core\Cache;
 use fw\core\Db;
 
 class MainController extends AppController
@@ -17,17 +18,29 @@ class MainController extends AppController
   public function indexAction()
   {
     //public $layout='main';//задаем конкретный шаблон для всего класса     
-    $this->setTitle('Ваши данные'); //установка заголовка
-    //$title=$this->setTitle('Ваши данные');
-    //debug($this->route['controller']);
-    View::setMeta('Система оплаты ренты Сloud Rental', 'Система оплаты', 'Система оплаты');
+    $this->setTitle('Главная страница'); //установка заголовка
     /**
-     * подключаемся к бд и таблице     
+     * подключаемся к бд и таблице Menu  
      */
     $model = new Main; //создаем объект модели соединения с БД
-    $menu = $this->menu; //строим меню
-    //$model->getU();    $model->getUcolumn();
-    $this->setParams(compact('menu'));
+    //$menu = $this->menu; //строим меню
+    //debug($menu);
+
+    //$user2 = $model->getU();
+    //кешируем данные меню
+    //1-создали объект кеша
+    $cache = Cache::instance();
+    //2-можно получить данные из кеша
+    $menu = $cache->get('menu');
+    if (!$menu) {
+      //берем меню из БД
+      $menu = $model->getMenuAll();
+      //3-положили в кеш по ключу menu данные $menu
+      $cache->set('menu', $menu, 120);
+    }
+    //debug($menu);
+    //$model->getUcolumn();
+    $this->setData(compact('menu'));
   }
 
 

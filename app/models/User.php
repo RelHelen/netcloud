@@ -165,4 +165,10 @@ class User extends Model
         // };
         return (isset($_SESSION['user']) && $_SESSION['user']['users_id_rol'] == '2');
     }
+
+    //проверка что пользователь авторизован как user
+    public static function isUser()
+    {
+        return (isset($_SESSION['user']));
+    }
 }

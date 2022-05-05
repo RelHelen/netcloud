@@ -13,3 +13,10 @@
 
     </nav>
 <?php endif; ?>
+
+<!-- <h3>Пользователь id=2</h3>
+<b>Логин</b>
+<?php
+//echo ($user2[0]['users_login']);
+//$menu2[0]['users_login'];  -->
+?>

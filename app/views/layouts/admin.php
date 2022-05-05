@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Система оплаты ренты Сloud Rental</title>  -->
-    <?php fw\core\base\View::getMeta(); ?>
+    <!-- Meta  -->
+    <?php echo $this->getMeta(); ?>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">

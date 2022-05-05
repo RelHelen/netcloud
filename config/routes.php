@@ -1,6 +1,6 @@
 <?php
 //подключаем Router
-use \fw\core\Router;
+use fw\core\Router;
 
 /**
  * при обращении к несуществующему контролеру и методу  (pages) переходим на main/index
@@ -33,4 +33,4 @@ Router::add('^$', ['controller' => 'Main', 'action' => 'index']);
  */
 Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
 
-Router::dispatch($query);
+//Router::dispatch($query);

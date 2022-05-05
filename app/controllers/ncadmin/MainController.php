@@ -18,11 +18,10 @@ class MainController extends AppadminController
 	{
 		// echo __METHOD__;
 		//debug($this->route);
-		View::setMeta('Админка | Главная страница');
-		$this->setTitle('Панель администратора');
+		// $this->setTitle('Панель администратора');
 		$user = new User;
-		$contracts = $user->getAll('contracts');
-		$this->setParams(compact('contracts'));
+		$contracts = $user->findAll('contracts');
+		$this->setData(compact('contracts'));
 	}
 	public function testAction()
 	{

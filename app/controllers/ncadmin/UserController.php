@@ -18,13 +18,12 @@ class UserController extends AppadminController
 		//echo __METHOD__;
 		//debug($this->route);
 		//public $layout = 'admin-user';
-		\fw\core\base\View::setMeta('Админка | Главная страница');
-		$this->setTitle('Панель администратора'); //установка заголовка
+
 		$test = "тестовая переменная";
 		$data = ['test', 3];
 
 		//1вариант - передача данных в вид, в виде будут доступны  'test' и 'data'
-		$this->setParams([
+		$this->setData([
 			'test' => $test,
 			'data' => $data,
 		]);

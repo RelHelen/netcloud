@@ -17,7 +17,7 @@ class UserController extends AppController
     //регистрация
     public function singupAction()
     {
-        View::setMeta('Регистрация');
+        // $this->setMeta('Регистрация');
         $this->setTitle('');
         if (!empty($_POST)) {
             //  debug($_POST);
@@ -61,7 +61,7 @@ class UserController extends AppController
     //авторизация
     public function loginAction()
     {
-        View::setMeta('Авторизация');
+        // $this->setMeta('Авторизация');
         $this->setTitle('');
         //если данные пришли POST то проверяем их
         if (!empty($_POST)) {
@@ -81,7 +81,7 @@ class UserController extends AppController
     //выход
     public function logoutAction()
     {
-        View::setMeta('Выход');
+        $this->setMeta('Выход');
         if (isset(($_SESSION['user']))) {
             unset($_SESSION['user']);
         }

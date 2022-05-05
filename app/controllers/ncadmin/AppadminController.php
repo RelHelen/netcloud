@@ -20,8 +20,14 @@ class AppadminController extends Controller
   {
     parent::__construct($route);
     $user = new User;
+    $this->setMeta(
+      'Система оплаты ренты Сloud Rental',
+      'Система оплаты',
+      'Система оплаты'
+    );
     $this->setTitle('Панель администратора');
-    //debug($route);
+    //debug($this->route);
+
 
     //проверка переменной из сессии при авторизации админа
     //если не админ, то выход на главную страницу
