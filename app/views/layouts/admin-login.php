@@ -10,15 +10,15 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="<?= PATH ?>assets/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?= PATH ?>/assets/fontawesome-free/css/all.min.css">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="<?= PATH ?>assets/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="<?= PATH ?>/assets/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?= PATH ?>assets/css/adminlte.min.css">
+    <link rel="stylesheet" href="<?= PATH ?>/assets/css/adminlte.min.css">
 
-    <link rel="stylesheet" href="<?= PATH ?>assets/icons/style.css">
-    <!-- <link rel="stylesheet" href="<?= PATH ?>css/style.css"> -->
-    <!-- <script src="<?= PATH ?>script/main.js" type="module"></script> -->
+    <link rel="stylesheet" href="<?= PATH ?>/assets/icons/style.css">
+    <!-- <link rel="stylesheet" href="<?= PATH ?>/css/style.css"> -->
+    <!-- <script src="<?= PATH ?>/script/main.js" type="module"></script> -->
 
     <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

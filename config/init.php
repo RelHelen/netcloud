@@ -16,7 +16,7 @@ define('CONF',  ROOT . '/config');
 define('APP',  ROOT . '/app'); //заходит в папку APP
 define('LIBS',  ROOT . '/vendor/fw/libs'); //заходит в папку libs
 
-define('PATH', '/netcloud/');
+define('PATH', '/netcloud');
 define('CACHE', ROOT . '/app/tmp/cache');
 //define('ADMIN', ROOT . '/ncadmin');
 

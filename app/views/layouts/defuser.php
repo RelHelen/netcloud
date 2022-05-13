@@ -10,17 +10,17 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="<?= PATH ?>assets/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?= PATH ?>/assets/fontawesome-free/css/all.min.css">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="<?= PATH ?>assets/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="<?= PATH ?>/assets/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?= PATH ?>assets/css/adminlte.min.css">
+    <link rel="stylesheet" href="<?= PATH ?>/assets/css/adminlte.min.css">
 
-    <!-- <link rel="stylesheet" href="<?= PATH ?>css/reboot.css">
-	<link rel="stylesheet" href="<?= PATH ?>css/bootstrap-grid.min.css"> -->
-    <link rel="stylesheet" href="<?= PATH ?>assets/icons/style.css">
-    <link rel="stylesheet" href="<?= PATH ?>css/style.css">
-    <!-- <script src="<?= PATH ?>script/main.js" type="module"></script> -->
+    <!-- <link rel="stylesheet" href="<?= PATH ?>/css/reboot.css">
+	<link rel="stylesheet" href="<?= PATH ?>/css/bootstrap-grid.min.css"> -->
+    <link rel="stylesheet" href="<?= PATH ?>/assets/icons/style.css">
+    <link rel="stylesheet" href="<?= PATH ?>/css/style.css">
+    <!-- <script src="<?= PATH ?>/script/main.js" type="module"></script> -->
 
     <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -32,7 +32,7 @@
     <div class="wrapper">
         <!-- Preloader -->
         <!-- <div class="preloader flex-column justify-content-center align-items-center">
-			<img class="animation__wobble" class="logo__img" src="<?= PATH ?>img/logo.png" alt="logo" height="60" width="60">
+			<img class="animation__wobble" class="logo__img" src="<?= PATH ?>/img/logo.png" alt="logo" height="60" width="60">
 		</div> -->
 
         <!-- Navbar -->
@@ -176,13 +176,13 @@
 
     </div> <!-- /.wrapper -->
 
-    <script src="assets/jquery.js"></script>
+    <script src="<?= PATH ?>/assets/jquery.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= PATH ?>/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- overlayScrollbars -->
-    <script src="assets/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="<?= PATH ?>/assets/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="assets/js/adminlte.js"></script>
+    <script src="<?= PATH ?>/assets/js/adminlte.js"></script>
     <?php
     foreach ($scripts as $script) {
         echo $script;

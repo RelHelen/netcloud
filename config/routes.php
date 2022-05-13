@@ -2,6 +2,7 @@
 //подключаем Router
 use fw\core\Router;
 
+Router::add('^contracts/(?P<alias>[a-z0-9-_]+)/?$', ['controller' => 'contracts', 'action' => 'view']);
 /**
  * при обращении к несуществующему контролеру и методу  (pages) переходим на main/index
  */
