@@ -13,7 +13,7 @@
                 </li>
                 <li class="contract-detalies-item">
                     <span class="par par_cotract lbl">Сумма аренды: </span>
-                    <span class="val val_contract rbl">3800р/30дней</span>
+                    <span class="val val_contract rbl"><?= $contract['cust'] ?>р/<?= $contract['period'] ?>дней</span>
                 </li>
                 <li class="contract-detalies-item">
                     <span class="par par_cotract lbl">Стоимость оборудования: : </span>
@@ -42,7 +42,7 @@
                                     </li>
                                     <li class="devices-detalies-item">
                                         <span class="par par_rent">Аренда </span>
-                                        <span class="val ">300р / 20дней</span>
+                                        <span class="val "><?= $res['dev_cost']; ?>р / <?= $res['dev_period']; ?>дней</span>
                                     </li>
                                     <li class="devices-detalies-item">
                                         <span class="par par_clock">Дата списания </span>

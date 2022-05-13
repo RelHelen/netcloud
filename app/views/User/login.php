@@ -6,7 +6,7 @@
                  <div class="card" style="border-radius: 15px;">
                      <div class="card-body p-5">
                          <h4>Вход в личный кабинет</h4>
-                         <form class="form" id="check" method="POST" action="<?= PATH ?>user/login">
+                         <form class="form" id="check" method="POST" action="<?= PATH ?>/user/login">
 
                              <div class=" mb-4">
                                  <label class="form-label" for="login">Введите логин</label>
@@ -27,7 +27,7 @@
                                      Войти</button>
                              </div>
                              <div class="text-center text-muted ">
-                                 Нет аккаунта? <a href="<?= PATH ?>user/singup" class=" ">
+                                 Нет аккаунта? <a href="<?= PATH ?>/user/singup" class=" ">
                                      Регистрация</a>
                              </div>
 

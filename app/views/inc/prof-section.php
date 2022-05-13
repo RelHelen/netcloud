@@ -49,7 +49,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a href="<?= PATH ?>user/logout" class="nav-link" role="button">
+        <a href="<?= PATH ?>/user/logout" class="nav-link" role="button">
             <p class="text-sm"><i class="fas fa-sign-out-alt mr-1"></i> Выйти</p>
             <!-- Alexander Pierce -->
         </a>
@@ -57,14 +57,14 @@
 <?php
 else : ?>
     <li class="nav-item">
-        <a href="<?= PATH ?>user/login" class="nav-link" role="button">
+        <a href="<?= PATH ?>/user/login" class="nav-link" role="button">
             <p class="text-sm"><i class="far fa-user"></i>
                 Войти
             </p>
         </a>
     </li>
     <li class="nav-item">
-        <a href="<?= PATH ?>user/singup" class="nav-link" role="button">
+        <a href="<?= PATH ?>/user/singup" class="nav-link" role="button">
             <p class="text-sm">
                 Регистрация</p>
             <!-- Alexander Pierce -->

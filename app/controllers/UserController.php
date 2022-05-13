@@ -58,6 +58,7 @@ class UserController extends AppController
             //die; 
         }
     }
+
     //авторизация
     public function loginAction()
     {
@@ -68,8 +69,11 @@ class UserController extends AppController
             //создаем объект модели
             $user = new User();
             if ($user->isLogin()) {
+
                 $_SESSION['success'] = "Вы успешно авторизованы";
-                redirect(PATH);
+
+
+                redirect(PATH . '/');
                 //сделать переход на страницу                 
             } else {
                 $_SESSION['error'] = "Логин/пароль введены неверено";
@@ -85,6 +89,6 @@ class UserController extends AppController
         if (isset(($_SESSION['user']))) {
             unset($_SESSION['user']);
         }
-        redirect(PATH . 'user/login');
+        redirect(PATH . '/user/login');
     }
 }

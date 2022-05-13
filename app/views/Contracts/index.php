@@ -17,7 +17,9 @@
 						</li>
 						<li class="contract-detalies-item">
 							<span class="par par_cotract lbl">Сумма аренды: </span>
-							<span class="val val_contract rbl">3800р/30дней</span>
+							<span class="val val_contract rbl"><?= $res['cust'] ?>р
+								/<?= $res['period'] ?>дней
+							</span>
 						</li>
 					</ul>
 				</div>

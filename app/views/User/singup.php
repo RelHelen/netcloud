@@ -8,7 +8,7 @@
                 <div class="card" style="border-radius: 15px;">
                     <div class="card-body p-5">
                         <h4>Форма регистрации</h4>
-                        <form class="form" id="check" method="POST" action="<?= PATH ?>user/singup">
+                        <form class="form" id="check" method="POST" action="<?= PATH ?>/user/singup">
 
                             <div class=" mb-4">
                                 <input type="text" id="login" name="login" class="form-control form-control-lg" placeholder="Введите логин" value="<?= isset($_SESSION['form_data']['login']) ? hsc($_SESSION['form_data']['login']) : ''; ?>" />
@@ -42,7 +42,7 @@
                             </div>
 
                             <div class="text-center text-muted ">
-                                Уже есть аккаунт? <a href="<?= PATH ?>user/login" class=" ">
+                                Уже есть аккаунт? <a href="<?= PATH ?>/user/login" class=" ">
                                     Войти</a>
                             </div>
 

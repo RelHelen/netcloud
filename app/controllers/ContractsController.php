@@ -14,6 +14,8 @@ class ContractsController extends AppController
   public $user;
   public $model;
   public $contracts;
+  public $contract;
+  public $devices;
   public function __construct($route)
   {
     parent::__construct($route); //сначало выполняем
@@ -31,35 +33,36 @@ class ContractsController extends AppController
 
 
   /**
+   * главный экран страницы Договора
    * вывод всех договоров
    */
   public function indexAction()
   {
 
     $this->setTitle('Договора'); //установка заголовка
-
-    // $contracts = $this->model->getContractsAll(); //получили договора
-    // $this->contracts = $contracts;
-
     if ($this->contracts) {
-      // debug($this->contracts);
       $contracts = $this->contracts;
-      // die;
       $this->setData(compact('contracts'));
-    };
+    }
   }
 
   /**
-   * вывод конкретного договора
+   * Страница выбранного договора
+   * вывод конкретного договора и устроуйств по договору
    */
   public function viewAction()
   {
     $alias = $this->route['alias'];
-    $contract = $this->model->getContract($alias);
-    $devices = $this->model->getDevicesAll($contract['id']);
-    //debug($contract);
-    //debug($devices);
-    //die;
-    $this->setData(compact('contract', 'devices'));
+    if ($alias) {
+      $contract = $this->model->getContract($alias);
+      if ($contract) {
+        $devices = $this->model->getDevices($contract['id']);
+        //$cust = $contract['cust'];
+        // $period = $contract['period'];
+        // [$devices, $cust]  = $this->model->getDevicesAll($contract['id']); 
+
+        $this->setData(compact('contract', 'devices'));
+      }
+    };
   }
 }

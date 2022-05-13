@@ -121,7 +121,7 @@ class User extends Model
             if ($isAdmin) {
                 //авторизация админа для админки
                 if (isset($_SESSION['user'])) {
-                    debug($_SESSION['user']);
+                    // debug($_SESSION['user']);
                     unset($_SESSION['user']);
                 };
                 $params = [
@@ -136,7 +136,7 @@ class User extends Model
                 //debug($user);
             }
             if ($user) {
-                debug($user);
+                //debug($user);
                 //сравниваем пароль с hash паролем из бд таблицы users
                 if (password_verify($pass, $user[0]['users_pass'])) {
                     //передае данные в сессию без пароля
@@ -144,7 +144,7 @@ class User extends Model
                         //ключ - название полей таблицы
                         if ($key == 'users_login' || $key == 'users_mail' || $key == 'users_id_rol') {
                             $_SESSION['user'][$key] = $val;
-                            debug($val);
+                            // debug($val);
                         }
                     }
                     return true;
