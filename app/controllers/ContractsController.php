@@ -52,6 +52,7 @@ class ContractsController extends AppController
    */
   public function viewAction()
   {
+    $this->setTitle('Договора');
     $alias = $this->route['alias'];
     if ($alias) {
       $contract = $this->model->getContract($alias);
