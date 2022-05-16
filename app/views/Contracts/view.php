@@ -1,4 +1,4 @@
-<!--  Устройства объекта пользователя -->
+<!--  Устройства по договору-->
 <?php if (!empty($contract)) :  ?>
     <div class="contract">
         id= <?= $contract['id'] ?>

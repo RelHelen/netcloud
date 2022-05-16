@@ -909,3 +909,33 @@
  ====****=====================
 [2022-05-13 23:31:44] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
  ====****=====================
+[2022-05-16 15:22:08] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 15:46:19] Ошибка: Undefined variable: contract || Файл: C:\xampp\htdocs\netcloud\app\models\Contracts.php || Строка: 95 
+ ====****=====================
+[2022-05-16 15:46:24] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 15:53:38] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:10:41] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:11:07] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:11:26] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:11:28] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:11:34] Ошибка: Class 'app\widgets\menudev\Menudev' not found || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 77 
+ ====****=====================
+[2022-05-16 16:20:49] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:20:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:21:36] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:21:40] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:21:42] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-16 16:21:44] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================

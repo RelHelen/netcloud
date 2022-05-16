@@ -10,7 +10,7 @@ namespace app\controllers;
 use fw\core\Db;
 use app\models\User;
 use fw\core\base\View;
-
+use app\widgets\menudev\Menudev;
 
 class UserController extends AppController
 {
@@ -71,9 +71,14 @@ class UserController extends AppController
             if ($user->isLogin()) {
 
                 $_SESSION['success'] = "Вы успешно авторизованы";
+                //подключаем виджет определения договоров и девайсов и помещаем в кеш и регистр
+
+                //
+
 
 
                 redirect(PATH . '/');
+
                 //сделать переход на страницу                 
             } else {
                 $_SESSION['error'] = "Логин/пароль введены неверено";

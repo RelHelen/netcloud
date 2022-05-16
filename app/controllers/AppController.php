@@ -22,7 +22,7 @@ class AppController extends Controller
   public function __construct($route)
   {
     parent::__construct($route); //сначало выполняем родительский конструктор
-    $site_name = App::$app->getProperty('site_name'); //свойство из парметров кнфигурации
+    $site_name = App::$app->getProperty('site_name'); //получ свойство из парметров кнфигурации
     $this->setMeta(
       // $site_name,
       'Система оплаты ренты Сloud Rental',
@@ -47,7 +47,7 @@ class AppController extends Controller
     //$sql = "SELECT * FROM menu";
     // $this->menu = $model->findBySql($sql);
 
-    //статиное меню на главной странице в секции main
+    //статичное меню на главной странице в секции main
     $menu = $this->menu;
     //echo '<h5>table = menu</h5>';
     //foreach ($menu as $val) {
@@ -57,11 +57,14 @@ class AppController extends Controller
 
     // debug($this->menu);
 
-    //положим кеш категорий в контейнер и берем катешгории из свойств
+    //положим кеш категорий меню в контейнер и берем категории из свойств
     App::$app->setProperty('cats', self::cacheCategory());
     //получим и распечатем
     //debug(App::$app->getProperties());
-    // debug($route,true);
+    //debug($route, true);
+
+    //положим кеш контракты в контейнер и берем контракты из свойств
+    App::$app->setProperty('contrs', self::cacheCategory());
 
     //проверка переменной из сессии при авторизации админа
     //если не user, то выход на главную страницу

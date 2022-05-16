@@ -1,13 +1,14 @@
 <?php
 
-namespace app\widgets\menu;
+namespace app\widgets\menudev;
 
 use fw\core\App;
 use fw\core\Cache;
 use app\models\AppModel;
+use app\models\Contracts;
 use PDO;
 
-class Menu
+class Menudev
 {
     protected $model; //подключаемая модель  
     protected $data; //массив меню
@@ -16,23 +17,23 @@ class Menu
     protected $tpl; //путь к шаблону для постоения кода меню
     protected $container = 'ul'; //в какой тег оборачиваем меню
     protected $class = 'menu'; //класс для $container
-    protected $table = 'menu'; //подключаемая таблица меню
+    protected $table = 'contracts'; //подключаемая таблица  
+    protected $tableadd = 'devices'; //подключаемая зависимая таблица  
     protected $cacheTime = false; //время кеширования
     // protected $cacheTime = 3600;
-    protected $cacheKey = 'asidemenu';
+    protected $cacheKey = 'devmenu';
     protected $attrs = [];
     protected $prepend = '';
 
     public function __construct($options = [])
     {
-        $this->model = new AppModel;
-        $this->tpl = __DIR__ . '/menu_tpl/menu.php';
+        $this->model = new Contracts;
+        $this->tpl = __DIR__ . '/menudev_tpl/menudev.php';
         $this->getOptions($options); //определим массив настроек, можно опрледелить пользователю
         $this->run();
     }
     /**
      * для возврата настроек меню
-     * заполняем при вызове в шаблон
      */
     protected function getOptions($options)
     {
@@ -42,7 +43,7 @@ class Menu
                 $this->$key = $val;
             }
         }
-        //  debug($options, true);
+        //debug($options, true);
     }
 
     //вызов
@@ -54,19 +55,20 @@ class Menu
         $this->menuHtml = $cache->get($this->cacheKey);
         //если нет в кеше
         if (!$this->menuHtml) {
-            //то берем даные из контейнера параметров cats и записываем в кеш
+            //то берем даные из контейнера параметров contrs и записываем в кеш
             //контейнер сформировали в AppConroller
-            $this->data = App::$app->getProperty('cats');
+            $this->data = App::$app->getProperty('contrs');
             //если нет данных
             if (!$this->data) {
                 //// $this->data = $this->getCat();
-                $this->data = $this->model->getAssoc("SELECT * FROM menu");
+                $this->data = $this->model->getAssoc("SELECT * FROM contracts");
             }
-            //debug($this->data);
+            debug($this->data);
             $this->tree = $this->getTree();
             //debug($this->tree);
             $this->menuHtml = $this->getMenuHtml($this->tree);
-            //debug($this->menuHtml);
+            debug($this->menuHtml);
+            die;
             //кешируем меню
             if ($this->cacheTime) {
                 $cache->set($this->cacheKey, $this->menuHtml, $this->cacheTime);

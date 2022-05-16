@@ -104,6 +104,16 @@
 					<?php if (isset($_SESSION['success'])) : ?>
 						<div class="alert alert-success">
 							<?= $_SESSION['success'];
+							//подключаем виджет меню
+							new \app\widgets\menudev\Menudev([
+								//можно задавать параметры меню                   
+								'cacheTime' => 60,
+								'container' => 'ul',
+								'class' => 'menu',
+
+							]);
+							//
+
 							unset($_SESSION['success']); ?>
 						</div>
 					<?php endif; ?>
