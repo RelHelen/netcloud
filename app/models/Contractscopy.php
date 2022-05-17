@@ -40,8 +40,7 @@ class Contracts extends Model
         //debug($customers['id']);
 
         $this->customers = $customers;
-        $contractsAll = [];
-        $devicesAll = [];
+        $contractsAll[] = '';
         /* поиск договоров заказчика -  contracts*/
         if (!empty($customers)) {
           $contractsParam = [
@@ -57,28 +56,27 @@ class Contracts extends Model
               $devicesAll[] = $devices;
               $contracts[$i]['cust'] = $cust;
               $contracts[$i]['period'] = $period;
-
               $contract['cust'] = $cust;
               $contract['period'] = $period;
 
-              $contractsAll[$i]['period'] = $period;
-              $contractsAll[$i]['cust'] = $cust;
               $contractsAll[$i]['devices'] = $devices;
               // $contracts[$i]['devices'] = $devices;
-
               $this->contract = $contract;
               $this->contracts = $contracts;
-              $this->contractsAll = $contractsAll;
 
               $i++;
             }
+            debug($contractsAll);
+            die;
             $this->devices = $devicesAll;
-            //передаеm данные в сессию 
-            $_SESSION['contracts'] = $contracts;
-            $_SESSION['contractsAll'] = $contractsAll;
 
+            //передаеm данные в сессию 
+            foreach ($this->contracts as $key => $val) {
+              //ключ - название полей таблицы              
+              $_SESSION['contracts'][$key] = $val;
+            }
             //unset($_SESSION['devices']);
-            //unset($_SESSION['contracts']);
+
             $j = 0;
             foreach ($devicesAll as $keys =>  $vals) {
               foreach ($vals as $keyc => $valc) {
@@ -103,7 +101,12 @@ class Contracts extends Model
               }
             };
 
-            return  [$contracts, $contractsAll, $devices];
+            //debug($_SESSION['devices']);
+            //debug($_SESSION['contracts'], true);
+            //echo '-contractsAll----';
+            //debug($contracts);
+
+            return  $contracts;
           }
           return false;
         }
@@ -113,32 +116,24 @@ class Contracts extends Model
 
   /**
    * получение договора у клиента с конктретным номером
-   * из массива сессии
    */
   public function getContract($num)
   {
-
     if ($_SESSION['user']['users_login']) {
       // debug($this->contracts);
-      //debug($num);
-      if (isset($_SESSION['contracts'])) {
-        $this->contracts = $_SESSION['contracts'];
-      } else {
-        $contracts = $this->contracts;
-      }
 
-      //debug($contracts);
-
+      $contractParam = [
+        'num' => $num
+      ];
+      // debug($num);
+      $contracts = $this->contracts;
+      // // debug($contracts);
       foreach ($contracts as $arr) {
         if ($arr['contr_nomer'] == $num && $arr['contr_status'] == 0) {
           $contract = $arr;
         }
       }
       $this->contract = $contract;
-
-      // $contractParam = [
-      //   'num' => $num
-      // ];
       // $contract = $this->getAssocArr("SELECT * FROM contracts WHERE contr_nomer=:num AND contr_status='0' LIMIT 1", $contractParam);
 
       // debug($this->contract);
@@ -151,8 +146,7 @@ class Contracts extends Model
   }
 
   /**
-   * получение всех устройств по договору
-   * (данные берутся из из массива сессии)
+   * получение всех устройств по договору(данные берутся из массива)
    */
   public function getDevices($num)
   {
@@ -170,23 +164,10 @@ class Contracts extends Model
       return $devicesContract;
     } else return false;
   }
-  /**
-   * получение всех устройств по договору(данные берутся из из массива сессии)
-   */
-  public function getDevicesc($contract)
-  {
-    foreach ($contract['devices'] as $dev) {
-      $devicesContract[] = $dev;
-    }
-    if ($devicesContract) {
-      return $devicesContract;
-    } else return false;
-  }
 
 
   /**
    * получение всех устройств по договору
-   * из БД
    */
   public function getDevicesAll($num)
   {

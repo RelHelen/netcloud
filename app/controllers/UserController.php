@@ -66,17 +66,17 @@ class UserController extends AppController
         $this->setTitle('');
         //если данные пришли POST то проверяем их
         if (!empty($_POST)) {
+            if (isset($_SESSION['user'])) {
+                unset($_SESSION['user']);
+                unset($_SESSION['contracts']);
+                unset($_SESSION['devices']);
+            }
             //создаем объект модели
             $user = new User();
             if ($user->isLogin()) {
 
                 $_SESSION['success'] = "Вы успешно авторизованы";
                 //подключаем виджет определения договоров и девайсов и помещаем в кеш и регистр
-
-                //
-
-
-
                 redirect(PATH . '/');
 
                 //сделать переход на страницу                 
@@ -93,6 +93,8 @@ class UserController extends AppController
         $this->setMeta('Выход');
         if (isset(($_SESSION['user']))) {
             unset($_SESSION['user']);
+            unset($_SESSION['contracts']);
+            unset($_SESSION['devices']);
         }
         redirect(PATH . '/user/login');
     }

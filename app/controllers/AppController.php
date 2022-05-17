@@ -63,8 +63,7 @@ class AppController extends Controller
     //debug(App::$app->getProperties());
     //debug($route, true);
 
-    //положим кеш контракты в контейнер и берем контракты из свойств
-    App::$app->setProperty('contrs', self::cacheCategory());
+
 
     //проверка переменной из сессии при авторизации админа
     //если не user, то выход на главную страницу
