@@ -1,4 +1,4 @@
-<?php if (isset($_SESSION['user'])) : ?>
+<?php if (!empty($_SESSION['user'])) : ?>
     <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
             <i class="far fa-comments"></i>
@@ -42,9 +42,7 @@
         <a href="<?= PATH ?> " class="nav-link" role="button">
             <p class="text-sm"><i class="far fa-user"></i>
                 <?php
-                // debug($_SESSION['user']);
-                echo $_SESSION['user']['users_login']; ?>
-
+                echo hsc($_SESSION['user']['users_login']); ?>
             </p>
         </a>
     </li>
@@ -54,8 +52,7 @@
             <!-- Alexander Pierce -->
         </a>
     </li>
-<?php
-else : ?>
+<?php else : ?>
     <li class="nav-item">
         <a href="<?= PATH ?>/user/login" class="nav-link" role="button">
             <p class="text-sm"><i class="far fa-user"></i>

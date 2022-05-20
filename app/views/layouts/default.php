@@ -107,12 +107,15 @@
 							unset($_SESSION['success']); ?>
 						</div>
 					<?php endif; ?>
+
 					<?= $content; ?>
 				</section>
 			</main>
 
 
 			<hr>
+			<?php //debug($_SESSION);
+			?>
 			<p>
 				<b>Rоличество запросов:</b>
 			</p>
@@ -187,6 +190,12 @@
 	<script src="<?= PATH ?>/assets/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="<?= PATH ?>/assets/js/adminlte.js"></script>
+	<script>
+		var path = '<?= PATH; ?>';
+		//console.log(path);
+	</script>
+	<script src="<?= PATH ?>/script/main.js"></script>
+
 	<?php
 	foreach ($scripts as $script) {
 		echo $script;
