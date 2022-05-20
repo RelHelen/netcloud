@@ -160,9 +160,7 @@ class User extends Model
     {
         //если существует в сессии пользователь
         //и он является  администратором
-        // if (isset($_SESSION['user'])) {
-        //     debug($_SESSION['user']);
-        // };
+
         return (isset($_SESSION['user']) && $_SESSION['user']['users_id_rol'] == '2');
     }
 

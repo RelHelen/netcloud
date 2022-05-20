@@ -7,7 +7,7 @@ namespace app\controllers;
 
 use app\models\Contracts;
 use app\models\Main;
-
+//use R;
 use fw\core\base\View;
 use fw\core\Cache;
 use fw\core\Db;
@@ -55,7 +55,8 @@ class MainController extends AppController
   public function testAction()
   {
     $this->setTitle('TestMain::index'); //установка заголовка
-
+    //
+    /*
     //если данные поступили из ajax ,то
     if ($this->isAjax()) {
       //получаем данные из Ajax
@@ -78,6 +79,8 @@ class MainController extends AppController
       $this->layout = 'main'; //задаем конкретный шаблон для данного action
 
     }
+  //
+  */
   }
 
   public function testicAction()

@@ -71,4 +71,14 @@ class ContractsController extends AppController
       }
     };
   }
+  /**
+   * Страница выбранного устройства
+   *  
+   */
+  public function singleAction()
+  {
+
+    $this->setTitle('Устройства'); //установка заголовка
+    $dev = $this->route['dev'];
+  }
 }

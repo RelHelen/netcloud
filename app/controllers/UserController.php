@@ -69,7 +69,11 @@ class UserController extends AppController
             if (isset($_SESSION['user'])) {
                 unset($_SESSION['user']);
                 unset($_SESSION['contracts']);
-                unset($_SESSION['devices']);
+                //unset($_SESSION['devices']);
+            }
+            if (!empty($_COOKIE['recentlyViewed'])) {
+                unset($_COOKIE['recentlyViewed']);
+                setcookie('recentlyViewed', null, -1, '/');
             }
             //создаем объект модели
             $user = new User();
@@ -94,7 +98,7 @@ class UserController extends AppController
         if (isset(($_SESSION['user']))) {
             unset($_SESSION['user']);
             unset($_SESSION['contracts']);
-            unset($_SESSION['devices']);
+            // unset($_SESSION['devices']);
         }
         redirect(PATH . '/user/login');
     }

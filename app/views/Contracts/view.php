@@ -1,6 +1,14 @@
 <!--  Устройства по договору-->
 <?php if (!empty($contract)) :  ?>
     <div class="contract">
+
+        <select class="select-contracts">
+            <option value="Выбрать">Выбрать</option>
+            <?php foreach ($contracts as $contr) : ?>
+                <option data-id="<?= $contr['id'] ?>" value="<?= $contr['contr_nomer'] ?>"><?= $contr['contr_adres_set'] ?></option>
+            <?php endforeach; ?>
+        </select>
+        <div id="contrnum"> </div>
         id= <?= $contract['id'] ?>
         <div class="contract-item">
             <h3 class="contract-header">
@@ -13,12 +21,20 @@
                 </li>
                 <li class="contract-detalies-item">
                     <span class="par par_cotract lbl">Сумма аренды: </span>
-                    <span class="val val_contract rbl"><?= $contract['cust'] ?>р/<?= $contract['period'] ?>дней</span>
+                    <span class="val val_contract rbl">
+                        <?php if (!empty($contract['cust'])) : ?>
+                            <?= $contract['cust'] ?>р/
+                        <?php endif; ?>
+                        <?php if (!empty($contract['period'])) : ?>
+                            <?= $contract['period'] ?>дней
+                        <?php endif; ?>
+
+                    </span>
                 </li>
-                <li class="contract-detalies-item">
+                <!-- <li class="contract-detalies-item">
                     <span class="par par_cotract lbl">Стоимость оборудования: : </span>
                     <span class="val val_contract rbl">2000р</span>
-                </li>
+                </li> -->
                 <li class="contract-detalies-item">
                     <span class="par par_cotract lbl">Дата списания: </span>
                     <span class="val val_contract rbl"> 21.02.2022г</span>
@@ -32,17 +48,17 @@
         <div class="p-tb devices">
             <h4 class="devices-header">Устройства объекта:</h3>
                 <div class="box ">
-                    <?php foreach ($devices as $res) : ?>
+                    <?php foreach ($devices as $device) : ?>
                         <div class="devices-item">
-                            <a href="#" class="link-shadow">
+                            <a class="link-shadow" data-id="<?= $device['id'] ?>" data-title="<?= $device['dev_sernumber'] ?>" href="<?= PATH ?>/contracts/<?= $contract['contr_nomer'] ?>/<?= $device['id'] ?>">
                                 <ul class="devices-detalies">
                                     <li class="devices-detalies-item">
                                         <span class="par par_dev">Номер устройства </span>
-                                        <span class="val "> <?= $res['dev_sernumber']; ?></span>
+                                        <span class="val "> <?= $device['dev_sernumber']; ?></span>
                                     </li>
                                     <li class="devices-detalies-item">
                                         <span class="par par_rent">Аренда </span>
-                                        <span class="val "><?= $res['dev_cost']; ?>р / <?= $res['dev_period']; ?>дней</span>
+                                        <span class="val "><?= $device['dev_cost']; ?>р / <?= $device['dev_period']; ?>дней</span>
                                     </li>
                                     <li class="devices-detalies-item">
                                         <span class="par par_clock">Дата списания </span>
@@ -50,7 +66,7 @@
                                     </li>
                                     <li class="devices-detalies-item">
                                         <span class="par par_place">Место </span>
-                                        <span class="val "> <?= $res['dev_place']; ?> </span>
+                                        <span class="val "> <?= $device['dev_place']; ?> </span>
                                     </li>
                                 </ul>
                             </a>

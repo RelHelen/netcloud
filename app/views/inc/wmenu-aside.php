@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="<?= PATH ?>" class="brand-link">
-        <img src="img/logo.png" alt="Logo" class="brand-image   ">
+        <img src="<?= PATH ?>/img/logo.png" alt="Logo" class="brand-image   ">
         <span class="logo__txt">cloud rental</span>
     </a>
     <!-- Sidebar -->

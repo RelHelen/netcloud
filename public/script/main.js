@@ -1,27 +1,33 @@
-import start from './moduls/start.js';
-import { createFormAuth, createFormCheck } from './moduls/creatLog.js';
-import auth from '../connect/scriptLog.js';
+// выбираем контракт и отправляем данные на сервер на странице contracts/index
 
-const init = (selector, title) => {
-  console.log('selector=', selector);
-  const app = document.querySelector(selector);
-  //const { mainHeader } = start(app, title);
+$('body').on('click', '.link-contracts', function (e) {
+  //e.preventDefault();
+  var id = $(this).data('id');
+  // console.log(id);
 
-  const formAuth = createFormAuth();
-  app.append(formAuth);
-  const checkBtn = document.querySelector('#check-btn');
-  const answerTxt = document.querySelector('#form-answer');
-  checkBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    //авторизация
-    auth(formAuth, answerTxt);
+  $.ajax({
+    url: path + '/contract/add',
+    data: { id: id },
+    type: 'GET',
+    success: function (res) {
+      showContracts(res);
+    },
+    error: function () {
+      alert('Ошибка! Попробуйте позже');
+    },
   });
-  checkBtn.addEventListener('mouseleave', (e) => {
-    e.preventDefault();
-    answerTxt.classList.remove('hidden');
-    //
-  });
+});
+function showContracts(res) {
+  console.log(res);
+}
 
-  start(app, title);
-};
-init('.main', 'Ваши данные');
+//выбор в списке договора на странице contracts/view
+$('.select-contracts').on('change', function () {
+  var contrNomer = $(this).val(),
+    contrId = $(this).find('option').filter(':selected').data('id'),
+    contrText = $(this).text();
+  $('#contrnum').text(path);
+
+  //location = contrNomer;
+  console.log(contrNomer, contrId, contrText);
+});

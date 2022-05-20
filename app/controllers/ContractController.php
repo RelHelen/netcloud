@@ -5,11 +5,14 @@
 
 namespace app\controllers;
 
+use app\models\Contracts;
 use app\models\Contract;
 use vendor\core\Router;
 
-class ContractController extends ContractsController
+class ContractController extends AppController
 {
+  public $model;
+
 
   public function indexAction()
   {
@@ -49,5 +52,28 @@ class ContractController extends ContractsController
     //  [contr_date_exp] => 2001-01-02 00:00:00
     //  [contr_adres_set] => Пржевальского 33а       
     $this->setData(compact('contracts'));
+  }
+  public function addAction()
+  {
+    // debug($_GET);
+    // die;
+    $this->model = new Contracts; //модель Контрактов
+    $id = !empty($_GET['id']) ? (int)$_GET['id'] : null;
+    // debug($id);
+    if ($id) {
+      $contract = $this->model->getContractSql($id);
+      //debug($contract);
+      // die;
+      if (!$contract) {
+        return false;
+      }
+    }
+    if ($this->isAjax()) {
+      debug($_SESSION['contract']);
+      // debug($contract);
+      die;
+      //$this->loadView('add', compact('contract'));
+    }
+    redirect();
   }
 }

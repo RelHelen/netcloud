@@ -3,6 +3,8 @@
 use fw\core\Router;
 
 Router::add('^contracts/(?P<alias>[a-z0-9-_]+)/?$', ['controller' => 'contracts', 'action' => 'view']);
+
+Router::add('^contracts/(?P<alias>[a-z0-9-_]+)/(?P<dev>[a-z0-9-_]+)?$', ['controller' => 'contracts', 'action' => 'single']);
 /**
  * при обращении к несуществующему контролеру и методу  (pages) переходим на main/index
  */
