@@ -1,13 +1,14 @@
 <!--  Устройства по договору-->
 <?php if (!empty($contract)) :  ?>
     <div class="contract">
-
+        <!-- выбор списка контрактов -->
         <select class="select-contracts">
             <option value="Выбрать">Выбрать</option>
             <?php foreach ($contracts as $contr) : ?>
-                <option data-id="<?= $contr['id'] ?>" value="<?= $contr['contr_nomer'] ?>"><?= $contr['contr_adres_set'] ?></option>
+                <option data-nomer="<?= $contr['contr_nomer'] ?>" value="<?= $contr['contr_nomer'] ?>"><?= $contr['contr_adres_set'] ?></option>
             <?php endforeach; ?>
         </select>
+
         <div id="contrnum"> </div>
         id= <?= $contract['id'] ?>
         <div class="contract-item">

@@ -27,49 +27,65 @@ class ContractsController extends AppController
     if (!$this->isUserLog($this->route['action'], $this->route['controller'])) {
       redirect(PATH . '/user/login');
     } else {
-      $this->model = new Contracts; //модель Контрактов
-      //unset($_SESSION['contract']);
-      //unset($_SESSION['contracts']);
+
+      //поолучили log user и Customer из сессии
+      $logUser = $this->logUser();
+      $idCustomer = $this->idCustomer();
+
+      $this->model = new Contracts; //модель Контрактов      
+
+      //unset($_SESSION['contracts']['nomer']);
       //unset($_SESSION['contractsAll']);
-      //unset($_SESSION['devices']);
-      if (isset($_SESSION['contracts'])) {
-        $this->contracts = $_SESSION['contracts']; //получили договора из сессии
-        $this->contractsAll = $_SESSION['contractsAll'];
-        // $this->devices = $_SESSION['devices'];
-      } else {
-        [$contracts, $contractsAll, $devices] =
-          $this->model->getContractsAll(); //получили договора
 
-        $this->contracts = $contracts;
-        $this->contractsAll = $contractsAll;
-        $this->devices = $devices;
-      }
-      // $this->contracts = $this->model->getContractsAll();
-      //debug($_SESSION['devices']);
 
-      // debug($_SESSION['contracts']);
+      //получаем договора
+      //надо что то оставить
+      // if (isset($_SESSION['contracts']['nomer'])) {
+      //   //если в сессии лежат id договоров
+      //   foreach ($_SESSION['contracts']['nomer'] as $keys => $vals) {
+      //     $contracts[$keys] = $this->model->getContractByNum($vals);
+      //   }
+      // }
+      // if (isset($_SESSION['contractsAll'])) {
+      //   //если в сессии лежат id договоров
+      //   foreach ($_SESSION['contractsAll'] as $keys => $vals) {
+      //     $contractsAll[] = $vals;
+      //   }
+      //   $this->model->contracts = $contractsAll;
+      // } else {
+      //   //получили договора
+      //   [$contracts, $contractsAll, $devices] = $this->model->getContractsAll($idCustomer);
+      //   $this->model->contracts = $contractsAll;
+      //   // $this->contractsAll = $contractsAll;
+      //   // $this->devices = $devices;
+      //   //положили в сессию id договоров
+      //   foreach ($contracts as $keys => $contract) {
+      //     $_SESSION['contracts']['nomer'][] = $contract['contr_nomer'];
+      //   }
+      //   foreach ($contractsAll as $keys => $contracts) {
+      //     $_SESSION['contractsAll'][] = $contracts;
+      //   }
+      // }
 
+      [$contracts, $contractsAll, $devices] = $this->model->getContractsAll($idCustomer);
+      $this->model->contracts = $contractsAll;
+      // [$contracts, $contractsAll, $devices] = $this->model->getContractsAll($idCustomer);
+      $this->contracts = $contractsAll;
+      // debug($_SESSION);
+      //debug($this->model);
     }
   }
-
-
-
   /**
    * главный экран страницы Договора
    * вывод всех договоров
    */
   public function indexAction()
   {
-
     $this->setTitle('Договора'); //установка заголовка
-    ////////
-    if (User::isUser()) {
-      if ($this->contracts) {
-        $contracts = $this->contracts;
-        $contractsAll = $this->contractsAll;
-        //debug($contracts, true);
-        $this->setData(compact('contracts'));
-      }
+    if ($this->contracts) {
+      $contracts = $this->contracts;
+      //debug($contracts, true);
+      $this->setData(compact('contracts'));
     }
   }
 
@@ -79,58 +95,40 @@ class ContractsController extends AppController
    */
   public function viewAction()
   {
-
     $this->setTitle('Договора');
-    if (User::isUser()) {
-      $alias = $this->route['alias'];
-      $contract = [];
-      $devices = [];
-      $contracts = $this->contractsAll;
-      //формирование договора $contract
-      if ($alias) {
-        // $contract = $this->model->getContract($alias);
-        foreach ($contracts as $key => $val) {
-          if ($val['contr_nomer'] == $alias) {
-            $contract = $val;
-            // debug($contract['id']);
+    $alias = $this->route['alias'];
+    $contract = [];
+    $devices = [];
 
-            // запись в куки запрошенного контракта
-            $this->model->setViewed($contract['id']);
+    //получили id  Customer из сессии
+    $idCustomer = $this->idCustomer();
+
+    //получили контракты из модели
+    // $contracts =  $this->model->contracts;
+    $contracts =  $this->contracts;
+
+    //формирование договора $contract
+    if ($alias) {
+
+      foreach ($contracts as $key => $val) {
+        if ($val['contr_nomer'] == $alias) {
+          $contract = $val;
+        }
+      }
+      //формирование устройств
+      if ($contract) {
+        if (!empty($contract['devices'])) {
+          foreach ($contract['devices'] as $dev) {
+            $devices[] = $dev;
           }
         }
+        // debug($_SESSION);
+        // debug($contracts);
+        // debug($devices);
 
-        //вывод из кука просмотренных контрактов
-        $r_viewed =  $this->model->getViewed();
-        $recentlyViewed = null;
-        if ($r_viewed) {
-          $in  = str_repeat('?,', count($r_viewed) - 1) . '?';
-          $sql = "SELECT * FROM contracts WHERE id IN ($in)";
-          $recentlyViewed = $this->model->findSql($sql, $r_viewed);
-          $recentlyViewed = $recentlyViewed->fetchAll();
-        }
-        //debug($recentlyViewed);
-
-
-        //формирование устройств
-        if ($contract) {
-
-          if (!empty($contract['devices'])) {
-            foreach ($contract['devices'] as $dev) {
-              $devices[] = $dev;
-            }
-          }
-          // debug($this->contractsAll);
-          // debug($contract, true);
-
-          //$devices = $this->model->getDevicesc($contract);
-          //$devices = $this->model->getDevices($contract['id']);
-          //$cust = $contract['cust'];
-          // $period = $contract['period'];
-          // [$devices, $cust]  = $this->model->getDevicesAll($contract['id']); 
-          $this->setData(compact('contracts', 'contract', 'devices'));
-        }
-      };
-    }
+        $this->setData(compact('contracts', 'contract', 'devices'));
+      }
+    };
   }
   /**
    * Страница выбранного устройства
@@ -142,12 +140,16 @@ class ContractsController extends AppController
     $this->setTitle('Параметры устройства'); //установка заголовка
     $alias = $this->route['alias'];
     $dev = $this->route['dev'];
+
+
     // debug($alias);
     // debug($dev);
     $device = [];
     $contract = [];
+    // $contractsAll =  $this->model->contracts;
+    $contractsAll =  $this->contracts;
     //определение договора
-    foreach ($this->contractsAll as $keys => $contracts) {
+    foreach ($contractsAll as $keys => $contracts) {
       if (!empty($contracts['contr_nomer']) && (!empty($alias))) {
         if ($contracts['contr_nomer'] == $alias) {
           $contract = $contracts;
@@ -166,6 +168,39 @@ class ContractsController extends AppController
     //die;
     $this->setData(compact('contract', 'device'));
   }
+  /**
+   * Страница всех устройства
+   *  
+   */
+  public function devicesAction()
+  {
+
+    $this->setTitle('Параметры устройств'); //установка заголовка
+
+    $device = [];
+    $contract = [];
+    // $contracts=  $this->model->contracts;
+    $contracts =  $this->contracts;
+
+    // debug($contractsAll);
+    //определение договора
+    // foreach ($contracts as $keys => $contract) {
+    //   debug($contract['devices']);
+
+    //   foreach ($contract['devices'] as $devices) {
+    //     if (!empty($devices['id']) && (!empty($dev))) {
+    //       if ($devices['id'] == $dev)
+    //         $device = $devices;
+    //     }
+    //   }
+    // }
+
+    // debug($device);
+    // debug($contractsAll);
+    // die;
+    $this->setData(compact('contracts'));
+  }
+
   //ajax запрос 
   public function addAction()
   {
@@ -173,7 +208,7 @@ class ContractsController extends AppController
     // die;
     $this->model = new Contracts; //модель Контрактов
     $id = !empty($_GET['id']) ? (int)$_GET['id'] : null;
-    debug($id);
+    // debug($id);
     if ($id) {
       $contract = $this->model->getContractSql($id);
       debug($contract);

@@ -41,10 +41,6 @@ class MainController extends AppController
     }
     //debug($menu);
     //$model->getUcolumn();
-
-
-
-
     $this->setData(compact('menu'));
   }
 

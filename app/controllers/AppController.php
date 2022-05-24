@@ -12,6 +12,7 @@ use fw\core\Cache;
 use fw\core\Db;
 use app\models\AppModel;
 use app\models\User;
+use app\models\Params;
 
 class AppController extends Controller
 {
@@ -22,13 +23,28 @@ class AppController extends Controller
   public function __construct($route)
   {
     parent::__construct($route); //сначало выполняем родительский конструктор
-    $site_name = App::$app->getProperty('site_name'); //получ свойство из парметров кнфигурации
-    $this->setMeta(
-      // $site_name,
-      'Система оплаты ренты Сloud Rental',
-      'Система оплаты',
-      'Система оплаты'
-    );
+    //debug($route);
+    //определели параметры сайта
+    App::$app->setProperty('params', self::setParamsFS());
+
+    //взяли параметры из кеша
+    $cache = Cache::instance();
+    $site_params = $cache->get('params');
+    //получ свойство из парметров кнфигурации
+    //$params = App::$app->getProperty('params');
+    //установка метаданных
+
+    if ($site_params) {
+      $this->setMeta(
+        $site_params['site_title'],
+        $site_params['site_desc'],
+        $site_params['site_name']
+      );
+    } else {
+      $this->setMeta(
+        "Система оплаты ренты"
+      );
+    };
     $this->setTitle('Ваши данные');
 
     //подключение к бд и таблице menu
@@ -43,35 +59,17 @@ class AppController extends Controller
     //   echo "<h3>тест в майне</h3>";
     // };
 
-    //find всех записей из таблицы users
-    //$sql = "SELECT * FROM menu";
-    // $this->menu = $model->findBySql($sql);
-
-    //статичное меню на главной странице в секции main
-    $menu = $this->menu;
-    //echo '<h5>table = menu</h5>';
-    //foreach ($menu as $val) {
-    //echo $val['id'] . ':';
-    // echo $val['title'] . '<br>';
-    // };
-
-    // debug($this->menu);
-
-    //положим кеш категорий меню в контейнер и берем категории из свойств
+    //положим кеш категорий меню в контейнер и устанавливаем  свойства из категорий
     App::$app->setProperty('cats', self::cacheCategory());
     //получим и распечатем
     //debug(App::$app->getProperties());
     //debug($route, true);
-
-
-
     //проверка переменной из сессии при авторизации админа
     //если не user, то выход на главную страницу
     $this->user = new User;
     if (!$this->isUserLog($this->route['action'], $this->route['controller'])) {
       //debug($_SESSION['user']);
-
-      //redirect(PATH . '/user/login');
+      redirect(PATH . '/user/login');
     }
   }
   /**
@@ -84,8 +82,7 @@ class AppController extends Controller
     $cats = $cache->get('cats'); //ключ cats хранит массив категорий
     if (!$cats) {
       ////$cats = self::getCat();
-      $cats = $model->getAssoc("SELECT * FROM menu");
-      //debug($cats);
+      $cats = $model->findFromModel();
       $cache->set('cats', $cats);
     }
     return $cats;
@@ -103,11 +100,64 @@ class AppController extends Controller
 
     return  $cat;
   }
-  //проверка, что пользовтаель авторизован и имеет доступ к странице
+
+  /**
+   * в параметры  положим в массив параметров и в кеш из table: params 
+   * которые можно добавлять autoload=1
+   */
+  protected function setParamsFS()
+  {
+    $modelParams = new AppModel;
+
+    $cache = Cache::instance();
+    $params = $cache->get('params');
+    //положили в кеш
+    if (!$params) {
+      $param = $modelParams->getAssoc("SELECT * FROM params WHERE autoload=1");
+      if (!empty($param)) {
+        foreach ($param as $keys => $vals) {
+          foreach ($vals as $k => $v) {
+            $params[$vals['params_name']] = $vals['params_value'];
+          }
+        }
+      }
+      $cache->set('params', $params);
+      // $cacheParams = $params;
+    }
+    return $params;
+  }
+
+  /**
+   * проверка, что пользовтаель авторизован и имеет доступ к странице
+   */
   public  function isUserLog($action, $controller)
   {
     if ($this->user::isUser() && $this->route['action'] == $action && $this->route['controller'] == $controller) {
       return true;
     }
+  }
+  /**
+   * удаление сессий
+   */
+  public  function destSession()
+  {
+    session_destroy();
+  }
+
+  /**
+   * 
+   * вернет login user из сессии
+   */
+  public static function logUser()
+  {
+    return $logUser = isset($_SESSION['user']['users_login']) ? hsc($_SESSION['user']['users_login']) : null;
+  }
+  /**
+   * 
+   * вернет id клиента из сессии
+   */
+  public static function idCustomer()
+  {
+    return $idCustomer = isset($_SESSION['customer']['id']) ? hsc($_SESSION['customer']['id']) : null;
   }
 }

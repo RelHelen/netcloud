@@ -9,6 +9,7 @@ namespace app\controllers;
 
 use fw\core\Db;
 use app\models\User;
+use app\models\Customers;
 use fw\core\base\View;
 use app\widgets\menudev\Menudev;
 
@@ -62,14 +63,13 @@ class UserController extends AppController
     //авторизация
     public function loginAction()
     {
-        // $this->setMeta('Авторизация');
+        //$this->setMeta('Авторизация');
         $this->setTitle('');
         //если данные пришли POST то проверяем их
         if (!empty($_POST)) {
+            //удаляем старые сессии
             if (isset($_SESSION['user'])) {
-                unset($_SESSION['user']);
-                unset($_SESSION['contracts']);
-                //unset($_SESSION['devices']);
+                $this->destSession();
             }
             if (!empty($_COOKIE['recentlyViewed'])) {
                 unset($_COOKIE['recentlyViewed']);
@@ -80,10 +80,7 @@ class UserController extends AppController
             if ($user->isLogin()) {
 
                 $_SESSION['success'] = "Вы успешно авторизованы";
-                //подключаем виджет определения договоров и девайсов и помещаем в кеш и регистр
-                redirect(PATH . '/');
-
-                //сделать переход на страницу                 
+                redirect(PATH . '/');  //сделать переход на страницу                 
             } else {
                 $_SESSION['error'] = "Логин/пароль введены неверено";
                 // unset($_SESSION['error']);
@@ -94,12 +91,8 @@ class UserController extends AppController
     //выход
     public function logoutAction()
     {
-        $this->setMeta('Выход');
-        if (isset(($_SESSION['user']))) {
-            unset($_SESSION['user']);
-            unset($_SESSION['contracts']);
-            // unset($_SESSION['devices']);
-        }
+
+        $this->destSession();
         redirect(PATH . '/user/login');
     }
 }

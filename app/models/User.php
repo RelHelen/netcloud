@@ -32,7 +32,27 @@ class User extends Model
         ],
     ];
 
-    //проверка уникальности логина/почты
+
+    /**
+     *получение id пользователя из users
+     */
+    public  function getIdUserByLogin($login)
+    {
+        $usersParam = [
+            'login' => $login
+        ];
+        $user  = $this->getAssocArr("SELECT id FROM users WHERE users_login=:login LIMIT 1", $usersParam);
+        return $user['id'];
+    }
+    /**
+     * получение клиента по пользователю
+     */
+    public  function getIdCustomer($id)
+    {
+    }
+    /**
+     * проверка уникальности логина-почты
+     */
     public  function checkUnique()
     {
 
@@ -99,8 +119,9 @@ class User extends Model
     /**
      * логин
      * @param bool $isAdmin
+     
+     * проверка  логина с бд при авторизации
      */
-    //проверка  логина с бд при авторизации
     public  function isLogin($isAdmin = false)
     {
         $login = !empty(trim($_POST['login']))
@@ -117,7 +138,7 @@ class User extends Model
                 'login' => $login
             ];
             // debug($params);
-            // die;
+
             if ($isAdmin) {
                 //авторизация админа для админки
                 if (isset($_SESSION['user'])) {
@@ -128,25 +149,29 @@ class User extends Model
                     'login' => $login,
                     'rol' => 2
                 ];
-                $user = $this->findBySql('SELECT * FROM users WHERE users_login=:login AND users_id_rol=:rol LIMIT 1', $params);
+                $user = $this->getAssocArr('SELECT * FROM users WHERE users_login=:login AND users_id_rol=:rol LIMIT 1', $params);
             } else {
                 //авторизация обычного пользователя
                 //из таблицы users получаем запись по  логину 
-                $user =  $this->findBySql('SELECT * FROM users WHERE users_login=:login  LIMIT 1', $params);
-                //debug($user);
+                $user =  $this->getAssocArr('SELECT * FROM users WHERE users_login=:login  LIMIT 1', $params);
             }
             if ($user) {
                 //debug($user);
                 //сравниваем пароль с hash паролем из бд таблицы users
-                if (password_verify($pass, $user[0]['users_pass'])) {
-                    //передае данные в сессию без пароля
-                    foreach ($user[0] as $key => $val) {
+                if (password_verify($pass, $user['users_pass'])) {
+                    //передаеь данные в сессию без пароля
+                    foreach ($user as $key => $val) {
                         //ключ - название полей таблицы
-                        if ($key == 'users_login' || $key == 'users_mail' || $key == 'users_id_rol') {
+                        if ($key == 'users_login' || $key == 'users_id_rol') {
                             $_SESSION['user'][$key] = $val;
-                            // debug($val);
                         }
                     }
+                    $modelCustomers = new Customers;
+                    $idCustomers = $modelCustomers->getIdCustomer($user['id']);
+                    if ($idCustomers) {
+                        $_SESSION['customer']['id'] = $idCustomers;
+                    }
+
                     return true;
                 }
             }

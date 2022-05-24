@@ -1631,3 +1631,223 @@
  ====****=====================
 [2022-05-20 15:28:30] Ошибка: Cannot use [] for reading || Файл: C:\xampp\htdocs\netcloud\app\views\layouts\default.php || Строка: 110 
  ====****=====================
+[2022-05-22 10:47:40] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-22 11:08:45] Ошибка: Non-static method fw\core\base\Model::getAssocArr() should not be called statically || Файл: C:\xampp\htdocs\netcloud\app\models\User.php || Строка: 44 
+ ====****=====================
+[2022-05-22 11:09:09] Ошибка: Non-static method fw\core\base\Model::getAssocArr() should not be called statically || Файл: C:\xampp\htdocs\netcloud\app\models\User.php || Строка: 44 
+ ====****=====================
+[2022-05-22 11:09:12] Ошибка: Non-static method fw\core\base\Model::getAssocArr() should not be called statically || Файл: C:\xampp\htdocs\netcloud\app\models\User.php || Строка: 44 
+ ====****=====================
+[2022-05-22 11:34:53] Ошибка: Undefined property: app\models\User::$id || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 83 
+ ====****=====================
+[2022-05-22 11:37:44] Ошибка: syntax error, unexpected '$modelCustomers' (T_VARIABLE) || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 87 
+ ====****=====================
+[2022-05-22 11:58:57] Ошибка: Контроллер app\controllers\DevacesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-22 12:02:04] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\models\Customers.php || Строка: 21 
+ ====****=====================
+[2022-05-22 12:03:27] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\models\Customers.php || Строка: 21 
+ ====****=====================
+[2022-05-22 12:22:08] Ошибка: Too few arguments to function app\models\Contracts::getContracts(), 0 passed in C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php on line 37 and exactly 1 expected || Файл: C:\xampp\htdocs\netcloud\app\models\Contracts.php || Строка: 24 
+ ====****=====================
+[2022-05-22 12:30:43] Ошибка: Too few arguments to function app\models\Contracts::getContracts(), 0 passed in C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php on line 37 and exactly 1 expected || Файл: C:\xampp\htdocs\netcloud\app\models\Contracts.php || Строка: 24 
+ ====****=====================
+[2022-05-22 12:30:58] Ошибка: Class 'app\controllers\AppModel' not found || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppuserController.php || Строка: 61 
+ ====****=====================
+[2022-05-22 12:31:21] Ошибка: Too few arguments to function app\models\Contracts::getContracts(), 0 passed in C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php on line 37 and exactly 1 expected || Файл: C:\xampp\htdocs\netcloud\app\models\Contracts.php || Строка: 24 
+ ====****=====================
+[2022-05-22 12:49:28] Ошибка: Undefined index: customer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 34 
+ ====****=====================
+[2022-05-22 13:12:05] Ошибка: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file || Файл: C:\xampp\htdocs\netcloud\app\models\Contracts.php || Строка: 146 
+ ====****=====================
+[2022-05-22 13:14:17] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 81 
+ ====****=====================
+[2022-05-22 14:42:25] Ошибка: Undefined variable: contractsAll || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 48 
+ ====****=====================
+[2022-05-22 14:43:21] Ошибка: Undefined variable: contractsAll || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 49 
+ ====****=====================
+[2022-05-22 14:50:04] Ошибка: Undefined variable: contractsAll || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 50 
+ ====****=====================
+[2022-05-22 14:51:36] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 43 
+ ====****=====================
+[2022-05-22 14:54:18] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 43 
+ ====****=====================
+[2022-05-22 14:54:28] Ошибка: syntax error, unexpected '{' || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 43 
+ ====****=====================
+[2022-05-22 14:54:42] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 43 
+ ====****=====================
+[2022-05-22 14:56:15] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 46 
+ ====****=====================
+[2022-05-22 14:56:42] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 46 
+ ====****=====================
+[2022-05-22 14:56:51] Ошибка: Undefined variable: vals || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 44 
+ ====****=====================
+[2022-05-22 14:56:58] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 46 
+ ====****=====================
+[2022-05-22 14:57:24] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 45 
+ ====****=====================
+[2022-05-22 14:57:35] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 45 
+ ====****=====================
+[2022-05-22 15:12:08] Ошибка: Undefined variable: num || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 42 
+ ====****=====================
+[2022-05-22 15:12:18] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\models\Contracts.php || Строка: 150 
+ ====****=====================
+[2022-05-22 15:13:25] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 40 
+ ====****=====================
+[2022-05-22 15:14:16] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 40 
+ ====****=====================
+[2022-05-22 15:14:45] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 40 
+ ====****=====================
+[2022-05-22 15:15:14] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 41 
+ ====****=====================
+[2022-05-22 15:16:38] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 41 
+ ====****=====================
+[2022-05-22 15:17:11] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 38 
+ ====****=====================
+[2022-05-22 15:19:45] Ошибка: [] operator not supported for strings || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 54 
+ ====****=====================
+[2022-05-22 15:28:19] Ошибка: Undefined index: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractController.php || Строка: 72 
+ ====****=====================
+[2022-05-22 15:28:19] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 91 
+ ====****=====================
+[2022-05-22 15:39:46] Ошибка: Undefined index: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractController.php || Строка: 72 
+ ====****=====================
+[2022-05-22 15:39:47] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 89 
+ ====****=====================
+[2022-05-22 15:40:11] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 89 
+ ====****=====================
+[2022-05-22 15:40:16] Ошибка: Undefined index: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractController.php || Строка: 72 
+ ====****=====================
+[2022-05-22 15:40:16] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 89 
+ ====****=====================
+[2022-05-22 15:43:04] Ошибка: Undefined index: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractController.php || Строка: 72 
+ ====****=====================
+[2022-05-22 15:43:04] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 90 
+ ====****=====================
+[2022-05-22 15:43:50] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 91 
+ ====****=====================
+[2022-05-22 15:43:54] Ошибка: Undefined index: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractController.php || Строка: 72 
+ ====****=====================
+[2022-05-22 15:43:54] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 91 
+ ====****=====================
+[2022-05-22 15:44:48] Ошибка: Undefined index: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractController.php || Строка: 72 
+ ====****=====================
+[2022-05-22 15:44:48] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 91 
+ ====****=====================
+[2022-05-22 15:44:57] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 91 
+ ====****=====================
+[2022-05-22 16:08:50] Ошибка: Undefined variable: contractsAll || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 59 
+ ====****=====================
+[2022-05-23 10:21:04] Ошибка: SQLSTATE[HY000] [2002] ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+ || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 23 
+ ====****=====================
+[2022-05-23 10:21:10] Ошибка: SQLSTATE[HY000] [2002] ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+ || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 23 
+ ====****=====================
+[2022-05-23 10:22:26] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 141 
+ ====****=====================
+[2022-05-23 16:07:57] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 141 
+ ====****=====================
+[2022-05-23 16:13:07] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 141 
+ ====****=====================
+[2022-05-23 16:18:29] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 141 
+ ====****=====================
+[2022-05-23 17:28:53] Ошибка: Invalid argument supplied for foreach() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 141 
+ ====****=====================
+[2022-05-23 17:35:21] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM contracts WHERE contr_id_cust='1' AND contr_status='1'' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 149 
+ ====****=====================
+[2022-05-23 17:35:41] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM contracts WHERE contr_id_cust='1' AND contr_status='1'' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 149 
+ ====****=====================
+[2022-05-23 17:35:44] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM contracts WHERE contr_id_cust='1' AND contr_status='1'' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 149 
+ ====****=====================
+[2022-05-23 17:35:51] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM contracts WHERE contr_id_cust='1' AND contr_status='1'' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 149 
+ ====****=====================
+[2022-05-23 17:36:31] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM contracts WHERE contr_id_cust='1' AND contr_status='1'' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 149 
+ ====****=====================
+[2022-05-23 18:11:25] Ошибка: Undefined index: contract_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 56 
+ ====****=====================
+[2022-05-23 18:16:12] Ошибка: Undefined variable: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 59 
+ ====****=====================
+[2022-05-23 18:16:13] Ошибка: Undefined variable: contract || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 59 
+ ====****=====================
+[2022-05-23 18:24:53] Ошибка: syntax error, unexpected '$idCustomers' (T_VARIABLE) || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 87 
+ ====****=====================
+[2022-05-23 18:25:01] Ошибка: syntax error, unexpected '$idCustomers' (T_VARIABLE) || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 87 
+ ====****=====================
+[2022-05-23 18:25:15] Ошибка: syntax error, unexpected '$idCustomers' (T_VARIABLE) || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 87 
+ ====****=====================
+[2022-05-23 18:25:17] Ошибка: syntax error, unexpected '$idCustomers' (T_VARIABLE) || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 87 
+ ====****=====================
+[2022-05-23 18:26:47] Ошибка: Trying to get property 'id' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 86 
+ ====****=====================
+[2022-05-23 18:27:01] Ошибка: Undefined property: app\models\User::$id || Файл: C:\xampp\htdocs\netcloud\app\controllers\UserController.php || Строка: 86 
+ ====****=====================
+[2022-05-23 18:36:53] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\models\User.php || Строка: 172 
+ ====****=====================
+[2022-05-23 18:47:45] Ошибка: Undefined index: users_data_reg || Файл: C:\xampp\htdocs\netcloud\app\models\User.php || Строка: 172 
+ ====****=====================
+[2022-05-23 19:08:49] Ошибка: Illegal string offset 'id' || Файл: C:\xampp\htdocs\netcloud\app\views\Contracts\view.php || Строка: 8 
+ ====****=====================
+[2022-05-23 19:09:06] Ошибка: Illegal string offset 'id' || Файл: C:\xampp\htdocs\netcloud\app\views\Contracts\view.php || Строка: 8 
+ ====****=====================
+[2022-05-23 19:28:49] Ошибка: Контроллер app\controllers\DevacesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-23 19:38:18] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 143 
+ ====****=====================
+[2022-05-23 19:45:59] Ошибка: Контроллер app\controllers\DevacesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-23 19:49:16] Ошибка: Контроллер app\controllers\DevicesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-23 19:50:09] Ошибка: Контроллер app\controllers\DevicesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-23 19:51:01] Ошибка: Контроллер app\controllers\DevicesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-23 19:54:05] Ошибка: Контроллер app\controllers\DevicesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-23 19:56:28] Ошибка: Контроллер app\controllers\DevicesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 136 
+ ====****=====================
+[2022-05-23 20:02:59] Ошибка: Контроллер app\controllers\DevicesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 138 
+ ====****=====================
+[2022-05-23 20:14:39] Ошибка: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 13 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 72 
+ ====****=====================
+[2022-05-23 20:15:32] Ошибка: preg_match(): Compilation failed: unmatched closing parenthesis at offset 18 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 72 
+ ====****=====================
+[2022-05-23 20:16:27] Ошибка: Undefined index: alias || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 170 
+ ====****=====================
+[2022-05-23 21:17:58] Ошибка: Undefined index: devices || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 177 
+ ====****=====================
+[2022-05-23 21:18:22] Ошибка: Undefined index: devices || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 177 
+ ====****=====================
+[2022-05-23 21:19:24] Ошибка: Illegal string offset 'devices' || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 179 
+ ====****=====================
+[2022-05-23 21:27:02] Ошибка: Undefined index: dev_sernumber || Файл: C:\xampp\htdocs\netcloud\app\views\Contracts\devices.php || Строка: 14 
+ ====****=====================
+[2022-05-23 21:27:44] Ошибка: Undefined index: dev_sernumber || Файл: C:\xampp\htdocs\netcloud\app\views\Contracts\devices.php || Строка: 14 
+ ====****=====================
+[2022-05-23 21:29:26] Ошибка: Undefined index: dev_sernumber || Файл: C:\xampp\htdocs\netcloud\app\views\Contracts\devices.php || Строка: 16 
+ ====****=====================
+[2022-05-23 22:15:28] Ошибка: Контроллер app\controllers\PersonalController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-23 22:15:30] Ошибка: Контроллер app\controllers\OperationController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-23 22:59:07] Ошибка: syntax error, unexpected ')', expecting ';' || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 37 
+ ====****=====================
+[2022-05-23 22:59:08] Ошибка: syntax error, unexpected ')', expecting ';' || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 37 
+ ====****=====================
+[2022-05-23 23:11:19] Ошибка: syntax error, unexpected 'public' (T_PUBLIC) || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 78 
+ ====****=====================
+[2022-05-24 14:12:52] Ошибка: syntax error, unexpected '$params' (T_VARIABLE) || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppController.php || Строка: 122 
+ ====****=====================
+[2022-05-24 14:13:06] Ошибка: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppController.php || Строка: 132 
+ ====****=====================
+[2022-05-24 14:16:44] Ошибка: Cannot use [] for reading || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppController.php || Строка: 126 
+ ====****=====================
+[2022-05-24 14:23:34] Ошибка: Undefined variable: params || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppController.php || Строка: 128 
+ ====****=====================
+[2022-05-24 14:25:43] Ошибка: Too few arguments to function fw\core\Registry::setProperty(), 1 passed in C:\xampp\htdocs\netcloud\app\controllers\AppController.php on line 126 and exactly 2 expected || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Registry.php || Строка: 64 
+ ====****=====================
+[2022-05-24 15:12:01] Ошибка: Access to undeclared static property: app\controllers\AppController::$model || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppController.php || Строка: 122 
+ ====****=====================
+[2022-05-24 15:23:50] Ошибка: Non-static method fw\core\Cache::get() should not be called statically || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppController.php || Строка: 37 
+ ====****=====================

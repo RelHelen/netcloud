@@ -10,30 +10,22 @@ class Main extends Model
   public $table = 'menu';
   public $pk = 'id';
 
+  //меню для главной странице
   public function getMenuAll()
   {
-    //echo '<h5>table = menu</h5>';
-    // Получаем и выводим данные их меню
-    //echo "<pre>";
     $param = [
       'page' => 'main'
     ];
     $data = $this->findAll('menu', 'WHERE page=:page', $param);
     return $data;
-    //echo "</pre>";
   }
 
   public function getU()
   {
-    //echo '<h5>table = users</h5>';
+
     $params2 = [
       'login' => 'user',
     ];
-    //$data2 = $this->findAll('users', 'WHERE users_login =:login', $params2);
-    //$data2 = $this->find('', 'LIMIT 1');
-    //debug($data2);
-    //die;
-
 
     $params = [
       'id' => 2,
