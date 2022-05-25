@@ -8,12 +8,15 @@ namespace app\controllers;
 use app\models\Contracts;
 use app\models\Contract;
 use app\models\User;
+use app\models\Operation;
 use fw\core\Cache;
 
 class ContractsController extends AppController
 {
   public $user;
   public $model;
+  public $modelOperation;
+  public $balanse;
   public $contracts;
   public $contractsAll;
   public $contract;
@@ -32,7 +35,15 @@ class ContractsController extends AppController
       $logUser = $this->logUser();
       $idCustomer = $this->idCustomer();
 
-      $this->model = new Contracts; //модель Контрактов      
+      $this->model = new Contracts; //модель Контрактов   
+
+      //баланс 
+      $this->modelOperation = new Operation; //модель Контрактов 
+      $this->balanse  = isset($_SESSION['customer']['balanse']) ? hsc($_SESSION['customer']['balanse']) : null;
+      if ($this->balanse) {
+        $balanse = $this->modelOperation->getBalanse($this->idCustomer());
+        $_SESSION['customer']['balanse'] = $balanse;
+      }
 
       //unset($_SESSION['contracts']['nomer']);
       //unset($_SESSION['contractsAll']);
@@ -82,6 +93,8 @@ class ContractsController extends AppController
   public function indexAction()
   {
     $this->setTitle('Договора'); //установка заголовка
+    //$balanse = $this->balanse;
+
     if ($this->contracts) {
       $contracts = $this->contracts;
       //debug($contracts, true);

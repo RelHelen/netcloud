@@ -105,6 +105,7 @@ class Contracts extends Model
                 $key == 'dev_place' ||
                 $key == 'dev_place' ||
                 $key == 'dev_place'
+
               ) {
                 //echo $val;
                 //$_SESSION['devices'][$j][$key] = $val;
@@ -184,7 +185,7 @@ class Contracts extends Model
      FROM devices WHERE dev_id_contr=:id ", $devParam);
 
     if ($devices) {
-      $this->devices = $devices;
+      // $this->devices = $devices;
       [$cust, $period] = $this->getContractCost($devices);
       return [$devices, $cust, $period];
     } else {

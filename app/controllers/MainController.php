@@ -5,18 +5,67 @@
 
 namespace app\controllers;
 
-use app\models\Contracts;
-use app\models\Main;
-//use R;
+use fw\core\Db;
 use fw\core\base\View;
 use fw\core\Cache;
-use fw\core\Db;
+
+use app\models\Contracts;
+use app\models\Main;
+use app\models\Operation;
+use app\models\Customers;
 
 class MainController extends AppController
 {
+  public $modelUser;
+  public $modelContracts;
+  public $modelOperation;
+  public $balanse;
+  public $contracts;
+  public $contractsAll;
+  public $contract;
+  public $devices;
+  public function __construct($route)
+  {
+    parent::__construct($route); //сначало выполняем   
 
-  //public $layout='main';//задаем конкретный шаблон для всего класса  
+    //проверка переменной из сессии при авторизации    
+    if (!$this->isUserLog($this->route['action'], $this->route['controller'])) {
+      redirect(PATH . '/user/login');
+    } else {
+
+      //поолучили log user и Customer из сессии
+      $logUser = $this->logUser();
+      $idCustomer = $this->idCustomer();
+      $this->modelContracts = new Contracts;
+      $this->modelOperation = new Operation;
+      $this->modelCustomer = new Customers;
+      $this->balanse  = isset($_SESSION['customer']['balanse']) ? hsc($_SESSION['customer']['balanse']) : null;
+      if ($this->balanse) {
+        $balanse = $this->modelOperation->getBalanse($this->idCustomer());
+        $_SESSION['customer']['balanse'] = $balanse;
+      };
+      //получаем договора 
+
+      [$contracts, $contractsAll, $devices] = $this->modelContracts->getContractsAll($idCustomer);;
+
+      $this->modelContracts->contracts = $contractsAll;
+      $this->contracts = $contractsAll;
+      // debug($this->modelContracts);
+    }
+  }
+
   public function indexAction()
+  {
+    $this->setTitle('Главная страница'); //установка заголовка
+    $balanse = $this->balanse;
+
+    if ($this->contracts) {
+      $contracts = $this->contracts;
+    }
+    $this->setData(compact('contracts', 'balanse'));
+  }
+
+  public function indexMenuAction()
   {
     //public $layout='main';//задаем конкретный шаблон для всего класса     
     $this->setTitle('Главная страница'); //установка заголовка

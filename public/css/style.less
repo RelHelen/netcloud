@@ -749,6 +749,37 @@ label:not(.form-check-label):not(.custom-file-label) {
   }
 }
 
+//personal
+.post {
+  &-block {
+    .flex(column; flex-start; stretch);
+    list-style: none;
+    padding: 0;
+  }
+  &-item:not(:last-child) {
+    padding: 0 0 0.8rem 0;
+    .flex(row; flex-start; stretch);
+    &:not(:last-child) {
+      .border-bottom;
+      margin-bottom: 1rem;
+    }
+    span:first-of-type {
+      flex: 0 1 300px;
+    }
+  }
+}
+.info-box {
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  min-height: 140px;
+  padding: 0.5rem;
+}
+
 //footer
 .footer {
   padding: 1.5rem 0.4rem;

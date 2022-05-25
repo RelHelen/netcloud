@@ -37,4 +37,19 @@ class Customers extends Model
         }
         return false;
     }
+
+    /**
+     * получение   клиента по id клиента
+     */
+    public  function getCustomerRow($id)
+    {
+        $customersParam = [
+            'id' => $id
+        ];
+        $customers = $this->getAssocArr("SELECT * FROM customers WHERE id=:id LIMIT 1", $customersParam);
+        if ($customers) {
+            return $customers;
+        }
+        return false;
+    }
 }

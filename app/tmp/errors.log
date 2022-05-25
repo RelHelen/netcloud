@@ -1851,3 +1851,65 @@
  ====****=====================
 [2022-05-24 15:23:50] Ошибка: Non-static method fw\core\Cache::get() should not be called statically || Файл: C:\xampp\htdocs\netcloud\app\controllers\AppController.php || Строка: 37 
  ====****=====================
+[2022-05-24 15:53:41] Ошибка: Class 'app\models\Operation' not found || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 38 
+ ====****=====================
+[2022-05-24 15:56:12] Ошибка: compact(): Undefined variable: balanse || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 91 
+ ====****=====================
+[2022-05-24 16:02:11] Ошибка: Undefined index: balanse || Файл: C:\xampp\htdocs\netcloud\app\controllers\ContractsController.php || Строка: 39 
+ ====****=====================
+[2022-05-24 16:35:11] Ошибка: Контроллер app\controllers\PersonalController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-24 16:35:34] Ошибка: Метод app\controllers\PersonalController::indexAction не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 131 
+ ====****=====================
+[2022-05-24 16:36:31] Ошибка: Undefined property: app\controllers\PersonalController::$contracts || Файл: C:\xampp\htdocs\netcloud\app\controllers\PersonalController.php || Строка: 40 
+ ====****=====================
+[2022-05-24 18:44:21] Ошибка: Undefined property: app\controllers\PersonalController::$modelOperation || Файл: C:\xampp\htdocs\netcloud\app\controllers\PersonalController.php || Строка: 42 
+ ====****=====================
+[2022-05-24 19:13:05] Ошибка: Контроллер app\controllers\OperationController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-24 19:13:08] Ошибка: Контроллер app\controllers\OperationController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-24 19:47:20] Ошибка: Контроллер app\controllers\OperationController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-24 19:55:13] Ошибка: Контроллер app\controllers\DocumetsController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-24 20:04:14] Ошибка: Call to a member function getContractsAll() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 48 
+ ====****=====================
+[2022-05-24 20:05:04] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 49 
+ ====****=====================
+[2022-05-24 20:05:06] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 49 
+ ====****=====================
+[2022-05-24 20:06:18] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 49 
+ ====****=====================
+[2022-05-24 20:06:55] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 50 
+ ====****=====================
+[2022-05-24 20:07:44] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 50 
+ ====****=====================
+[2022-05-24 20:08:53] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 50 
+ ====****=====================
+[2022-05-24 20:09:44] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 50 
+ ====****=====================
+[2022-05-24 20:10:18] Ошибка: Attempt to assign property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 50 
+ ====****=====================
+[2022-05-24 20:11:31] Ошибка: Trying to get property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 49 
+ ====****=====================
+[2022-05-24 20:11:33] Ошибка: Trying to get property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 49 
+ ====****=====================
+[2022-05-24 20:11:33] Ошибка: Trying to get property 'contracts' of non-object || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 49 
+ ====****=====================
+[2022-05-24 20:11:50] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 64 
+ ====****=====================
+[2022-05-24 20:12:08] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 64 
+ ====****=====================
+[2022-05-24 20:12:42] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 64 
+ ====****=====================
+[2022-05-24 20:13:05] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 64 
+ ====****=====================
+[2022-05-24 20:32:03] Ошибка: compact(): Undefined variable: balansess || Файл: C:\xampp\htdocs\netcloud\app\controllers\MainController.php || Строка: 65 
+ ====****=====================
+[2022-05-24 20:32:14] Ошибка: Undefined variable: balanse || Файл: C:\xampp\htdocs\netcloud\app\views\Main\index.php || Строка: 17 
+ ====****=====================
+[2022-05-24 21:38:39] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-24 21:39:30] Ошибка: Контроллер app\controllers\DocumetsController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================

@@ -1,5 +1,7 @@
 <!--  Контракты пользователя -->
+
 <div class="box  br-lt contract">
+
 	<?php $i = 0;
 	if (!empty($contracts)) : ?>
 		<?php foreach ($contracts as $contract) :
