@@ -182,7 +182,10 @@
 
 
 	</div> <!-- /.wrapper -->
-
+	<script>
+		path = '<?= PATH ?>';
+		adminpath = '<?= ADMIN ?>'
+	</script>
 	<script src="<?= PATH ?>/assets/jquery.js"></script>
 	<!-- Bootstrap -->
 	<script src="<?= PATH ?>/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -190,10 +193,6 @@
 	<script src="<?= PATH ?>/assets/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="<?= PATH ?>/assets/js/adminlte.js"></script>
-	<script>
-		var path = '<?= PATH; ?>';
-		//console.log(path);
-	</script>
 	<script src="<?= PATH ?>/script/main.js"></script>
 
 	<?php

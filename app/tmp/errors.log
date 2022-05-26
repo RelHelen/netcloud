@@ -1913,3 +1913,468 @@
  ====****=====================
 [2022-05-24 21:39:30] Ошибка: Контроллер app\controllers\DocumetsController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
  ====****=====================
+[2022-05-25 15:12:12] Ошибка: Контроллер app\controllers\OperationController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-25 15:15:17] Ошибка: Namespace declaration statement has to be the very first statement or after any declare call in the script || Файл: C:\xampp\htdocs\netcloud\app\controllers\OperationController.php || Строка: 7 
+ ====****=====================
+[2022-05-25 15:15:46] Ошибка: Namespace declaration statement has to be the very first statement or after any declare call in the script || Файл: C:\xampp\htdocs\netcloud\app\controllers\OperationController.php || Строка: 4 
+ ====****=====================
+[2022-05-25 15:16:47] Ошибка: Контроллер app\controllers\DocumetsController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-25 16:00:33] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:10:39] Ошибка: Контроллер app\controllers\ncadmin\ContractsController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-26 10:10:45] Ошибка: Контроллер app\controllers\ncadmin\ContractsController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-26 10:18:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:18:58] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 10:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 11:19:26] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Main\index.php || Строка: 3 
+ ====****=====================
+[2022-05-26 14:27:24] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:28:11] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:28:24] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:30:34] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:30:37] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:30:51] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:31:11] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:31:38] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 27 
+ ====****=====================
+[2022-05-26 14:31:58] Ошибка: Too few arguments to function fw\core\base\Model::count(), 1 passed in C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php on line 27 and exactly 3 expected || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 256 
+ ====****=====================
+[2022-05-26 14:32:54] Ошибка: PDOStatement::execute() expects parameter 1 to be array, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 95 
+ ====****=====================
+[2022-05-26 14:34:24] Ошибка: PDOStatement::execute() expects parameter 1 to be array, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 95 
+ ====****=====================
+[2022-05-26 14:35:18] Ошибка: Undefined variable: res || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 97 
+ ====****=====================
+[2022-05-26 14:38:05] Ошибка: Call to undefined method fw\core\Db::query() || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 265 
+ ====****=====================
+[2022-05-26 14:46:00] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 14:46:31] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 27 
+ ====****=====================
+[2022-05-26 14:52:02] Ошибка: Undefined index: COUNT(*) || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 267 
+ ====****=====================
+[2022-05-26 14:53:33] Ошибка: PDOStatement::execute() expects parameter 1 to be array, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 99 
+ ====****=====================
+[2022-05-26 15:05:51] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\MainController.php || Строка: 28 
+ ====****=====================
+[2022-05-26 15:15:37] Ошибка: Call to a member function fetchAll() on bool || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 260 
+ ====****=====================
+[2022-05-26 15:15:56] Ошибка: Call to a member function rowCount() on bool || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 262 
+ ====****=====================
+[2022-05-26 15:29:20] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE users_status=1' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 99 
+ ====****=====================
+[2022-05-26 16:07:55] Ошибка: Контроллер app\controllers\ncadmin\ContractsController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-26 16:08:31] Ошибка: compact(): Undefined variable:  || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 29 
+ ====****=====================
+[2022-05-26 16:08:44] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:14:40] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:15:59] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:16:08] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:16:22] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:18:52] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:20:19] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:21:51] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:23:42] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:24:43] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:25:47] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:29:44] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 32 
+ ====****=====================
+[2022-05-26 16:29:51] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:30:08] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:30:23] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:30:30] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:30:35] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:31:17] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:38:50] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 31 
+ ====****=====================
+[2022-05-26 16:39:00] Ошибка: Undefined variable: orders || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 31 
+ ====****=====================
+[2022-05-26 16:39:08] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:40:47] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:41:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:42:36] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:42:54] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:45:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:47:24] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 16:49:46] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 17:19:06] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1103 Incorrect table name 'SELECT ' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 151 
+ ====****=====================
+[2022-05-26 17:21:05] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 151 
+ ====****=====================
+[2022-05-26 17:21:05] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:25:23] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 99 
+ ====****=====================
+[2022-05-26 17:25:23] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:25:24] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 99 
+ ====****=====================
+[2022-05-26 17:25:24] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:26:17] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 99 
+ ====****=====================
+[2022-05-26 17:26:17] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:26:18] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 99 
+ ====****=====================
+[2022-05-26 17:26:18] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:32:50] Ошибка: PDOStatement::execute() expects parameter 1 to be array, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 99 
+ ====****=====================
+[2022-05-26 17:36:58] Ошибка: Undefined variable: contacts || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 39 
+ ====****=====================
+[2022-05-26 17:39:33] Ошибка: Call to a member function rowCount() on null || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 261 
+ ====****=====================
+[2022-05-26 17:51:26] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 17:51:51] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 151 
+ ====****=====================
+[2022-05-26 17:51:51] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:53:17] Ошибка: Undefined variable: query || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 17:53:18] Ошибка: Undefined variable: query || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 26 
+ ====****=====================
+[2022-05-26 17:53:33] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 151 
+ ====****=====================
+[2022-05-26 17:53:33] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:53:52] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 151 
+ ====****=====================
+[2022-05-26 17:53:52] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:55:08] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 17:55:08] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:55:10] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 17:55:10] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:55:35] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 17:55:35] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:55:36] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 17:55:36] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:56:02] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 17:56:02] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:56:03] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 17:56:03] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:56:03] Ошибка: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud_db.cotracts' doesn't exist || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 17:56:03] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 17:56:22] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 17:58:17] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 17:58:26] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 18:07:21] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 18:07:37] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 18:08:12] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 18:09:07] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(SUM(`devices`.`dev_cost`),2) AS `sum` FROM `contracts` 
+		JOIN `customers` ON ' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:09:31] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:09:31] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:11:17] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:11:17] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:11:18] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:11:18] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:11:36] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'devices.dev_cost' in 'field list' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:11:36] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:11:38] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'devices.dev_cost' in 'field list' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:11:38] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:16:23] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:16:23] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:17:33] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:17:33] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:18:20] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:18:20] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:18:53] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:18:53] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:21:22] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN `customers` ON `contracts`.`contr_id_cust`=`customers`.`id`	
+		ORDER BY `c' at line 2 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:22:19] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=`customers`.`id`	
+				ORDER BY `contracts`.`id`' at line 2 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:22:49] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=`customers`.`id`	
+				ORDER BY `contracts`.`id`' at line 2 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:23:30] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 18:26:59] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cotracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:26:59] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:28:05] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 18:28:49] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ROUND(SUM(`devices`.`dev_cost`),2) AS `sum`   FROM `contracts` 
+		JOIN `device' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:30:04] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ROUND(SUM(`devices`.`dev_cost`),2) AS `sum`   FROM `contracts` 
+		JOIN `device' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:34:40] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' SUM(`devices`.`dev_cost` AS `sum`   FROM `contracts` 
+		JOIN `devices` ON `con' at line 1 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:43:55] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 18:57:48] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'devices.contr_id_cust' in 'group statement' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 18:57:48] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 18:58:43] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 228 
+ ====****=====================
+[2022-05-26 19:00:55] Ошибка: Undefined index: id || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 40 
+ ====****=====================
+[2022-05-26 19:01:03] Ошибка: Undefined variable: cost || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 42 
+ ====****=====================
+[2022-05-26 19:23:47] Ошибка: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ontracts.id' in 'on clause' || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 19:23:47] Ошибка: A non well formed numeric value encountered || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-26 19:44:16] Ошибка: compact(): Undefined variable: contactsAll || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 41 
+ ====****=====================
+[2022-05-26 19:44:37] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 19:45:21] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 19:47:27] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 34 
+ ====****=====================
+[2022-05-26 19:53:02] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 34 
+ ====****=====================
+[2022-05-26 19:53:09] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 34 
+ ====****=====================
+[2022-05-26 19:53:27] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 34 
+ ====****=====================
+[2022-05-26 19:53:28] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 34 
+ ====****=====================
+[2022-05-26 19:53:28] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 34 
+ ====****=====================
+[2022-05-26 19:54:15] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:07:32] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:08:46] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:09:12] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:11:22] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:11:42] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:12:28] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:13:12] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:13:31] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:14:38] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:15:19] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:18:19] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:18:25] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:21:09] Ошибка: Undefined variable: count || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 59 
+ ====****=====================
+[2022-05-26 20:21:47] Ошибка: Undefined variable: count || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 59 
+ ====****=====================
+[2022-05-26 20:21:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:24:25] Ошибка: compact(): Undefined variable: count,contracts || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 43 
+ ====****=====================
+[2022-05-26 20:24:39] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:27:50] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:28:35] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:29:45] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:30:45] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:31:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:32:01] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:32:27] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:32:46] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:33:27] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:33:41] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:34:23] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:44:59] Ошибка: Undefined variable: pagination || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\index.php || Строка: 60 
+ ====****=====================
+[2022-05-26 20:45:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:45:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:46:02] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:49:04] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:49:36] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:50:02] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:50:07] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:50:11] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:51:05] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:51:12] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:53:46] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 20:54:39] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:00:35] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:01:16] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:03:13] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:03:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:04:16] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:04:55] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:06:31] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:07:14] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{`10`}' at line 4 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 21:07:24] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1327 Undeclared variable: 10 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-26 21:07:42] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:07:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:08:11] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:08:58] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:09:04] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-26 21:09:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================

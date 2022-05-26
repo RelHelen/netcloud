@@ -1,0 +1,11 @@
+.content-wrapper {
+  background: #e9eaeb;
+}
+.light-header {
+  color: #e8ebf2;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+.bg-grey {
+  background: #f9f9f9;
+}

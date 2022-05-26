@@ -67,10 +67,6 @@ class AppController extends Controller
     //проверка переменной из сессии при авторизации админа
     //если не user, то выход на главную страницу
     $this->user = new User;
-    if (!$this->isUserLog($this->route['action'], $this->route['controller'])) {
-      //debug($_SESSION['user']);
-      redirect(PATH . '/user/login');
-    }
   }
   /**
    * в кеш положим массив категрий  

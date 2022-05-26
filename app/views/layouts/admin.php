@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="<?= PATH ?>/assets/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= PATH ?>/assets/css/adminlte.min.css">
-
-    <link rel="stylesheet" href="<?= PATH ?>/assets/icons/style.css">
+    <link rel="stylesheet" href="<?= PATH ?>/css/admin.css">
+    <!-- <link rel="stylesheet" href="<?= PATH ?>/assets/icons/style.css"> -->
     <!-- <link rel="stylesheet" href="<?= PATH ?>/css/style.css"> -->
     <!-- <script src="<?= PATH ?>/script/main.js" type="module"></script> -->
 
@@ -27,18 +27,20 @@
 -->
 </head>
 
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition  sidebar-mini layout-fixed layout-navbar-fixed ">
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-dark">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button">
                         <i class="fas fa-bars"></i></a>
                 </li>
-
+                <li>
+                    <a class="nav-link" href="<?= PATH; ?>">На сайт </a>
+                </li>
             </ul>
 
             <!-- Right navbar links -->
@@ -60,6 +62,7 @@
         <!-- Main Sidebar Container -->
         <!-- aside -->
         <?php
+        //вывод меню
         $this->getPart('aside');
         ?>
         <!-- /.aside -->
@@ -74,7 +77,7 @@
                         ?>
                     </h2>
                 </header>
-                <section class="panel panel_view ptl">
+                <section>
                     <?php
                     //$this->getPart('header-section');
                     //default_.php$this->getPart('navmain-section');
@@ -103,7 +106,7 @@
             <?= debug(\fw\core\Db::$countSql) ?>
             <br>
             <p>
-                <b>История запросов</b> <br>выполняемый запрос на странице в шаблоне default:
+                <b>История запросов</b> <br>выполняемый запрос на странице в шаблоне admin:
             </p>
             <?= debug(\fw\core\Db::$queries) ?>
 
@@ -163,7 +166,10 @@
 
 
     </div> <!-- /.wrapper -->
-
+    <script>
+        path = '<?= PATH ?>';
+        adminpath = '<?= ADMIN ?>'
+    </script>
     <script src="<?= PATH ?>/assets/jquery.js"></script>
     <!-- Bootstrap -->
     <script src="<?= PATH ?>/assets/bootstrap/js/bootstrap.bundle.min.js"></script>

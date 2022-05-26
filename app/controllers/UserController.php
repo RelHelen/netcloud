@@ -15,6 +15,15 @@ use app\widgets\menudev\Menudev;
 
 class UserController extends AppController
 {
+    public function __construct($route)
+    {
+        parent::__construct($route); //сначало выполняем
+
+        if (!$this->isUserLog($this->route['action'], $this->route['controller']) && $route['action'] != 'login' && $route['controller'] != 'User') {
+            // $this->destSession();
+            redirect(PATH . '/user/login');
+        }
+    }
     //регистрация
     public function singupAction()
     {
@@ -71,6 +80,7 @@ class UserController extends AppController
             if (isset($_SESSION['user'])) {
                 $this->destSession();
             }
+            //куки просмотров
             if (!empty($_COOKIE['recentlyViewed'])) {
                 unset($_COOKIE['recentlyViewed']);
                 setcookie('recentlyViewed', null, -1, '/');
@@ -78,7 +88,6 @@ class UserController extends AppController
             //создаем объект модели
             $user = new User();
             if ($user->isLogin()) {
-
                 $_SESSION['success'] = "Вы успешно авторизованы";
                 redirect(PATH . '/');  //сделать переход на страницу                 
             } else {
@@ -91,7 +100,6 @@ class UserController extends AppController
     //выход
     public function logoutAction()
     {
-
         $this->destSession();
         redirect(PATH . '/user/login');
     }

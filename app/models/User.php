@@ -157,21 +157,22 @@ class User extends Model
             }
             if ($user) {
                 //debug($user);
-                //сравниваем пароль с hash паролем из бд таблицы users
+                //сравниваем пароль с hash паролем из бд таблицы users и создаем сессию
                 if (password_verify($pass, $user['users_pass'])) {
-                    //передаеь данные в сессию без пароля
                     foreach ($user as $key => $val) {
                         //ключ - название полей таблицы
                         if ($key == 'users_login' || $key == 'users_id_rol') {
                             $_SESSION['user'][$key] = $val;
                         }
+                        if (!$isAdmin) {
+                            //поиск клиента
+                            $modelCustomers = new Customers;
+                            $idCustomers = $modelCustomers->getIdCustomer($user['id']);
+                            if ($idCustomers) {
+                                $_SESSION['customer']['id'] = $idCustomers;
+                            }
+                        }
                     }
-                    $modelCustomers = new Customers;
-                    $idCustomers = $modelCustomers->getIdCustomer($user['id']);
-                    if ($idCustomers) {
-                        $_SESSION['customer']['id'] = $idCustomers;
-                    }
-
                     return true;
                 }
             }
@@ -185,13 +186,12 @@ class User extends Model
     {
         //если существует в сессии пользователь
         //и он является  администратором
-
         return (isset($_SESSION['user']) && $_SESSION['user']['users_id_rol'] == '2');
     }
 
     //проверка что пользователь авторизован как user
     public static function isUser()
     {
-        return (isset($_SESSION['user']));
+        return (isset($_SESSION['user']) && $_SESSION['user']['users_id_rol'] == '3');
     }
 }
