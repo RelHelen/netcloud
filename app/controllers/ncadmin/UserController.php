@@ -44,7 +44,7 @@ class UserController extends AppadminController
 	public function logoutAction()
 	{
 
-		if (isset(($_SESSION['useradmin']))) {
+		if (isset(($_SESSION['user']))) {
 			$this->destSession();
 		}
 		redirect(ADMIN . '/user/login');

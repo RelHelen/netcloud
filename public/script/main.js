@@ -1,3 +1,8 @@
+//зыкрытие alert
+
+$('.alert-close').on('click', function () {
+  $('.alert-close').css('display', 'none');
+});
 // выбираем контракт и отправляем данные на сервер на странице contracts/index
 
 // $('body').on('click', '.link-contracts', function (e) {

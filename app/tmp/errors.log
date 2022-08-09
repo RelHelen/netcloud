@@ -2378,3 +2378,436 @@
  ====****=====================
 [2022-05-26 21:09:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
  ====****=====================
+[2022-05-27 13:53:58] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 13:54:21] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 13:54:48] Ошибка: Контроллер app\controllers\ncadmin\ContractController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-05-27 13:54:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 13:55:24] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 13:55:31] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 13:55:54] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\AppadminController.php || Строка: 49 
+ ====****=====================
+[2022-05-27 14:02:28] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\AppadminController.php || Строка: 49 
+ ====****=====================
+[2022-05-27 14:02:33] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 29 
+ ====****=====================
+[2022-05-27 14:03:30] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 29 
+ ====****=====================
+[2022-05-27 14:03:31] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 29 
+ ====****=====================
+[2022-05-27 14:03:31] Ошибка: Call to a member function count() on string || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 29 
+ ====****=====================
+[2022-05-27 14:03:48] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:04:39] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:04:42] Ошибка: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-27 14:04:42] Ошибка: http_response_code() expects parameter 1 to be int, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-27 14:05:29] Ошибка: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-27 14:05:29] Ошибка: http_response_code() expects parameter 1 to be int, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-27 14:05:31] Ошибка: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-27 14:05:31] Ошибка: http_response_code() expects parameter 1 to be int, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-27 14:05:47] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:05:48] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:05:52] Ошибка: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-27 14:05:52] Ошибка: http_response_code() expects parameter 1 to be int, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-27 14:07:19] Ошибка: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 153 
+ ====****=====================
+[2022-05-27 14:07:19] Ошибка: http_response_code() expects parameter 1 to be int, string given || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\ErrorHandler.php || Строка: 109 
+ ====****=====================
+[2022-05-27 14:09:48] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:09:54] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:13:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:13:09] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:13:12] Ошибка:  Вид <b>C:\xampp\htdocs\netcloud/app/views/ncadmin/Contracts/view.php<b> не найден   || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\View.php || Строка: 97 
+ ====****=====================
+[2022-05-27 14:14:53] Ошибка: Call to undefined method app\controllers\ncadmin\ContractsController::set() || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:15:15] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 38 
+ ====****=====================
+[2022-05-27 14:16:02] Ошибка: Undefined variable: count || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 59 
+ ====****=====================
+[2022-05-27 14:16:26] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:16:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:17:04] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:19:09] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 63 
+ ====****=====================
+[2022-05-27 14:20:58] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:21:57] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:25:15] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:25:17] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:25:34] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:25:54] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:25:55] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:25:57] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:25:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:26:00] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 14:26:42] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:27:26] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:27:29] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 60 
+ ====****=====================
+[2022-05-27 14:29:47] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 65 
+ ====****=====================
+[2022-05-27 14:30:35] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:09] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:10] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:12] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:34] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:35] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:35] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:35] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:36] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:31:36] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:32:14] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 40 
+ ====****=====================
+[2022-05-27 14:32:29] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 41 
+ ====****=====================
+[2022-05-27 14:32:30] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 41 
+ ====****=====================
+[2022-05-27 14:32:30] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 41 
+ ====****=====================
+[2022-05-27 14:32:31] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 41 
+ ====****=====================
+[2022-05-27 14:33:31] Ошибка: Undefined index: contr_status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 39 
+ ====****=====================
+[2022-05-27 14:33:46] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:34:52] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:37:24] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 13 
+ ====****=====================
+[2022-05-27 14:38:23] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:38:31] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:38:52] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:38:58] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:39:02] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:44:33] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:47:01] Ошибка: syntax error, unexpected 'else' (T_ELSE), expecting end of file || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 7 
+ ====****=====================
+[2022-05-27 14:48:39] Ошибка: syntax error, unexpected 'else' (T_ELSE), expecting end of file || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 7 
+ ====****=====================
+[2022-05-27 14:50:09] Ошибка: Undefined index: status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 5 
+ ====****=====================
+[2022-05-27 14:50:46] Ошибка: Undefined index: status || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 5 
+ ====****=====================
+[2022-05-27 14:51:05] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 8 
+ ====****=====================
+[2022-05-27 14:51:49] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 10 
+ ====****=====================
+[2022-05-27 14:53:44] Ошибка: Undefined variable: contracts || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 11 
+ ====****=====================
+[2022-05-27 14:54:20] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:54:38] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:54:47] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:54:50] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:54:58] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:55:01] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:55:41] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 14:56:05] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:27:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:27:21] Ошибка: syntax error, unexpected '?>' || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 63 
+ ====****=====================
+[2022-05-27 15:27:44] Ошибка: Undefined variable: order || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 51 
+ ====****=====================
+[2022-05-27 15:32:14] Ошибка: Undefined variable: i || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 88 
+ ====****=====================
+[2022-05-27 15:32:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:39:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:41:50] Ошибка: Undefined index: contr_comment || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 63 
+ ====****=====================
+[2022-05-27 15:42:27] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:43:21] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:43:47] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:44:04] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:44:26] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:53:28] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:54:10] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:54:12] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:54:15] Ошибка: Class 'R' not found || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 15:54:25] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:54:28] Ошибка: Class 'R' not found || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 64 
+ ====****=====================
+[2022-05-27 15:54:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:55:02] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:55:15] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:55:17] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:56:25] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 15:56:29] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:02:25] Ошибка: Undefined index: contr_nomer || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 14 
+ ====****=====================
+[2022-05-27 16:07:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:07:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:08:03] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:11:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:13:46] Ошибка: Undefined variable: cat || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\base\Model.php || Строка: 241 
+ ====****=====================
+[2022-05-27 16:16:35] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\app\controllers\ncadmin\ContractsController.php || Строка: 62 
+ ====****=====================
+[2022-05-27 16:17:54] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:25:54] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:34:11] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:35:05] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:37:50] Ошибка: Undefined variable: qty || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 153 
+ ====****=====================
+[2022-05-27 16:38:06] Ошибка: syntax error, unexpected '?>' || Файл: C:\xampp\htdocs\netcloud\app\views\ncadmin\Contracts\view.php || Строка: 153 
+ ====****=====================
+[2022-05-27 16:38:23] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:42:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:42:11] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:46:17] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:46:41] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:46:57] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:49:27] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:49:56] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:50:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:51:31] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:52:07] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:53:18] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:54:37] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:55:45] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:55:48] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:55:58] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:56:01] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:56:17] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:57:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:58:14] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 16:58:33] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:00:30] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:01:03] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:01:13] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:01:30] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:02:03] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:02:35] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:03:21] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:04:43] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:05:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:05:09] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:05:15] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 17:05:18] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:19:02] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:19:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:19:08] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:19:09] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:19:17] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:21:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:24:23] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:25:35] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:26:19] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:26:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:43:10] Ошибка: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10' at line 4 || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 101 
+ ====****=====================
+[2022-05-27 18:43:19] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:43:33] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:46:50] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:46:59] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 18:47:01] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-27 19:51:06] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-05-31 12:41:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:32:46] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:33:26] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:33:37] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:33:45] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:33:48] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:34:12] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:34:21] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:34:23] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:34:42] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:35:11] Ошибка: Метод app\controllers\ncadmin\ContractsController::changedevAction не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 131 
+ ====****=====================
+[2022-06-03 21:35:12] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:35:14] Ошибка: Метод app\controllers\ncadmin\ContractsController::changedevAction не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 131 
+ ====****=====================
+[2022-06-03 21:35:16] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:36:26] Ошибка: Контроллер app\controllers\ncadmin\DevicesController не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 137 
+ ====****=====================
+[2022-06-03 21:36:34] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:36:37] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:36:42] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:36:43] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:36:48] Ошибка: Метод app\controllers\ncadmin\ContractsController::changedevAction не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 131 
+ ====****=====================
+[2022-06-03 21:36:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-03 21:36:54] Ошибка: Метод app\controllers\ncadmin\ContractsController::changedevAction не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 131 
+ ====****=====================
+[2022-06-03 21:38:48] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 17:41:52] Ошибка: SQLSTATE[HY000] [2002] ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+ || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Db.php || Строка: 23 
+ ====****=====================
+[2022-06-13 18:18:03] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:18:53] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:19:00] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:19:07] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:19:13] Ошибка: Метод app\controllers\ncadmin\ContractsController::changedevAction не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 131 
+ ====****=====================
+[2022-06-13 18:19:19] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:19:23] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:19:25] Ошибка: Метод app\controllers\ncadmin\ContractsController::changeAction не найден || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 131 
+ ====****=====================
+[2022-06-13 18:19:30] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:29:01] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:29:02] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:29:04] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================
+[2022-06-13 18:29:05] Ошибка: Страница не найдена || Файл: C:\xampp\htdocs\netcloud\vendor\fw\core\Router.php || Строка: 144 
+ ====****=====================

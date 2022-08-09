@@ -9,3 +9,22 @@
 .bg-grey {
   background: #f9f9f9;
 }
+.bg-lite {
+  background: #fff;
+}
+.table-hover__row tbody tr:hover {
+  cursor: pointer;
+}
+.alert-close::before {
+  content: 'x';
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.alert-close:hover::before {
+  cursor: pointer;
+}

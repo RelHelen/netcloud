@@ -146,7 +146,7 @@ class AppController extends Controller
    */
   public static function logUser()
   {
-    return $logUser = isset($_SESSION['user']['users_login']) ? hsc($_SESSION['user']['users_login']) : null;
+    return $logUser = isset($_SESSION['user']['users']) ? hsc($_SESSION['user']['users']) : null;
   }
   /**
    * 

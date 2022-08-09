@@ -1,7 +1,6 @@
 <section class="content-header">
-
     <ol class="breadcrumb ">
-        <li class="breadcrumb-item"><a href="<?= ADMIN; ?>/contracts"><i class="fa fa-dashboard"></i> Главная</a>
+        <li class="breadcrumb-item"><a href="<?= ADMIN; ?>"><i class="fa fa-dashboard"></i> Главная</a>
         </li>
         <li class="breadcrumb-item" class="active">Список договоров</li>
     </ol>
@@ -18,7 +17,7 @@
                 <div class="box">
                     <div class="box-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-hover ">
+                            <table class="table table-bordered table-hover table-hover__row">
                                 <thead>
                                     <tr>
                                         <th>№</th>
@@ -38,8 +37,9 @@
                                     foreach ($contracts as $contract) : ?>
                                         <?php
 
-                                        $class = $contract['contr_status'] ? 'bg-white' : 'bg-grey'; ?>
-                                        <tr class="<?= $class; ?>">
+                                        $class = $contract['contr_status'] ? 'bg-lite' : 'bg-grey'; ?>
+
+                                        <tr class="<?= $class; ?>" data-id="<?= $contract['id']; ?>">
                                             <td><?= $i; ?></td>
                                             <td><?= $contract['contr_nomer']; ?></td>
                                             <td><?= $contract['cust_name']; ?></td>
@@ -48,8 +48,15 @@
                                             <td><?= $contract['contr_date_st']; ?></td>
                                             <td><?= $contract['contr_date_exp']; ?></td>
                                             <td><?= $contract['contr_adres_set']; ?></td>
-                                            <td><a href="<?= ADMIN; ?>/contract/view?id=<?= $contract['id']; ?>"><i class="fa fa-fw fa-eye"></i></a> <a class="delete" href="<?= ADMIN; ?>/contract/delete?id=<?= $contract['id']; ?>"><i class="fa fa-fw fa-close text-danger"></i></a></td>
+                                            <td>
+                                                <a href="<?= ADMIN; ?>/contracts/view?id=<?= $contract['id']; ?>"><i class="fa fa-fw fa-eye mr-2"></i></a>
+
+                                                <a href="<?= ADMIN; ?>/contracts/change?id=<?= $contract['id']; ?>"><i class="fa fa-pen text-success mr-2"></i></a>
+
+                                                <a class="delete" href="<?= ADMIN; ?>/contract/delete?id=<?= $contract['id']; ?>"><i class="fa fa-window-close text-danger"></i></a>
+                                            </td>
                                         </tr>
+
                                     <?php $i++;
                                     endforeach; ?>
                                 </tbody>

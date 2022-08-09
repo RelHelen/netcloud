@@ -19,6 +19,10 @@ class AppadminController extends Controller
   public function __construct($route)
   {
     parent::__construct($route);
+    if (!User::isAdmin() && $route['action'] != 'login' && $route['controller'] != 'User') {
+      redirect(ADMIN . '/user/login');
+    }
+    //debug($_SESSION);
     $user = new User;
     $model = new AppModel;
     $this->user = $user;
@@ -28,21 +32,26 @@ class AppadminController extends Controller
       'Система оплаты'
     );
     $this->setTitle('Панель администратора');
-    //debug($this->route);
 
-    //проверка переменной из сессии при авторизации админа
-    //если не админ, то выход на главную страницу
-    // debug($route,true);
-    //debug($_SESSION);
-    if (!User::isAdmin() && $route['action'] != 'login' && $route['controller'] != 'User') {
 
-      // $this->destSession();
-      redirect(ADMIN . '/user/login');
-    }
     // //подключение к бд и таблице menu
     //new Main;
   }
 
+  //получение числа из метода Get по полю id или по другому полю
+  public function getRequestID($get = true, $id = 'id')
+  {
+    if ($get) {
+      $data = $_GET;
+    } else {
+      $data = $_POST;
+    }
+    $id = !empty($data[$id]) ? (int)$data[$id] : null;
+    if (!$id) {
+      throw new \Exception('Страница не найдена', 404);
+    }
+    return $id;
+  }
   /**
    * удаление сессий
    */

@@ -6,7 +6,6 @@ use fw\core\base\Model;
 use app\models\User;
 use fw\core\Db;
 //use JetBrains\PhpStorm\Internal\ReturnTypeContract;
-
 class Contracts extends Model
 {
   public $table = 'contracts';
